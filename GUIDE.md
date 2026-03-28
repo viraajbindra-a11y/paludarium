@@ -22,7 +22,7 @@
 | LECA (lightweight expanded clay aggregate) | 2–3 lbs, drainage layer (~1.5" deep) | $8–12 | [Amazon](https://www.amazon.com/s?k=LECA+clay+balls) |
 | Activated charcoal (horticultural grade) | 1 lb, thin filtration layer on top of LECA | $6–10 | [Amazon](https://www.amazon.com/s?k=horticultural+charcoal) |
 | Fiberglass mesh / landscape fabric | Cut to fit, prevents soil mixing into drainage | $5–8 | [Amazon](https://www.amazon.com/s?k=terrarium+mesh+screen) |
-| ABG mix (terrarium soil) | 3–4 lbs. Tree fern fiber, peat, charcoal, orchid bark, sphagnum | $10–15 | [Amazon](https://www.amazon.com/s?k=ABG+mix+terrarium+soil) · [GlassBoxTropicals](https://www.glassboxtropicals.com/abg-mix-p/gbt-abg.htm) |
+| ABG mix (terrarium soil) | 3–4 lbs. Tree fern fiber, peat, charcoal, orchid bark, sphagnum | $10–15 | [Amazon](https://www.amazon.com/s?k=ABG+mix+terrarium+soil) · [Amazon](https://www.amazon.com/s?k=ABG+mix+terrarium+substrate) |
 | Long-fiber sphagnum moss | Top dressing and moisture retention | $6–10 | [Amazon](https://www.amazon.com/s?k=sphagnum+moss+terrarium) |
 
 ### Substrate (Water Side)
@@ -36,44 +36,44 @@
 
 | Plant | Why It's Special | Approx. Price | Buy |
 |-------|-----------------|---------------|-----|
-| Jewel orchid (Macodes petola) x1 | Dark velvety leaves with glowing gold lightning-bolt veins. The showpiece plant | $15–25 | [Etsy](https://www.etsy.com/search?q=macodes+petola) · [TerrariumTribe](https://terrariumtribe.com/shop/) |
-| Peacock begonia (Begonia pavonina) x1 | Iridescent blue-green shimmer under low light | $12–20 | [Etsy](https://www.etsy.com/search?q=begonia+pavonina) · [GlassBoxTropicals](https://www.glassboxtropicals.com/begonia-s/1934.htm) |
-| Fittonia — pink/white vein varieties x2–3 | Near-neon colors under grow lights | $4–6 each | [Amazon](https://www.amazon.com/s?k=fittonia+plant) · [Etsy](https://www.etsy.com/search?q=fittonia+terrarium) |
-| Selaginella erythropus (ruby red spikemoss) x1–2 | Deep red undersides, much more striking than plain green | $6–8 each | [Etsy](https://www.etsy.com/search?q=selaginella+erythropus) · [GlassBoxTropicals](https://www.glassboxtropicals.com/selaginella-s/1834.htm) |
-| Marcgravia sintenisii x1 | Shingling vine that climbs in geometric patterns — almost alien-looking | $10–15 | [Etsy](https://www.etsy.com/search?q=marcgravia+sintenisii) · [TerrariumTribe](https://terrariumtribe.com/shop/) |
-| Miniature bromeliad (Neoregelia) x1 | Bright reds/pinks, holds tiny water pools in its center | $8–12 | [Etsy](https://www.etsy.com/search?q=miniature+neoregelia) · [TerrariumTribe](https://terrariumtribe.com/shop/) |
-| Mood moss (Dicranum) | Fluffy mounded moss, lush texture | $8–12 | [Amazon](https://www.amazon.com/s?k=mood+moss+terrarium) · [Etsy](https://www.etsy.com/search?q=mood+moss+live) |
-| Fern moss (Thuidium) | Delicate feathery texture, great contrast with mood moss | $6–10 | [Etsy](https://www.etsy.com/search?q=fern+moss+live+terrarium) |
+| Jewel orchid (Macodes petola) x1 | Dark velvety leaves with glowing gold lightning-bolt veins. The showpiece plant | $15–25 | [Amazon](https://www.amazon.com/s?k=macodes+petola+jewel+orchid) · [Amazon](https://www.amazon.com/s?k=terrarium+plants+live) |
+| Peacock begonia (Begonia pavonina) x1 | Iridescent blue-green shimmer under low light | $12–20 | [Amazon](https://www.amazon.com/s?k=begonia+pavonina+peacock) · [Amazon](https://www.amazon.com/s?k=begonia+pavonina+terrarium) |
+| Fittonia — pink/white vein varieties x2–3 | Near-neon colors under grow lights | $4–6 each | [Amazon](https://www.amazon.com/s?k=fittonia+plant) · [Amazon](https://www.amazon.com/s?k=fittonia+terrarium+plant) |
+| Selaginella erythropus (ruby red spikemoss) x1–2 | Deep red undersides, much more striking than plain green | $6–8 each | [Amazon](https://www.amazon.com/s?k=selaginella+erythropus+ruby+red) · [Amazon](https://www.amazon.com/s?k=selaginella+terrarium+plant) |
+| Marcgravia sintenisii x1 | Shingling vine that climbs in geometric patterns — almost alien-looking | $10–15 | [Amazon](https://www.amazon.com/s?k=marcgravia+sintenisii+terrarium) · [Amazon](https://www.amazon.com/s?k=terrarium+plants+live) |
+| Miniature bromeliad (Neoregelia) x1 | Bright reds/pinks, holds tiny water pools in its center | $8–12 | [Amazon](https://www.amazon.com/s?k=miniature+neoregelia+bromeliad) · [Amazon](https://www.amazon.com/s?k=terrarium+plants+live) |
+| Mood moss (Dicranum) | Fluffy mounded moss, lush texture | $8–12 | [Amazon](https://www.amazon.com/s?k=mood+moss+terrarium) · [Amazon](https://www.amazon.com/s?k=mood+moss+live+terrarium) |
+| Fern moss (Thuidium) | Delicate feathery texture, great contrast with mood moss | $6–10 | [Amazon](https://www.amazon.com/s?k=fern+moss+live+terrarium) |
 | Baby tears (Soleirolia) x1 | Tiny-leaved carpet, fills gaps beautifully | $4–6 | [Amazon](https://www.amazon.com/s?k=baby+tears+plant) |
 
 ### Plants — Water (Upgraded for Visual Impact)
 
 | Plant | Why It's Special | Approx. Price | Buy |
 |-------|-----------------|---------------|-----|
-| Bucephalandra (red/blue variety) x1–2 | Metallic sheen, comes in reds, blues, greens. Attaches to rocks | $8–12 each | [BucePlant](https://buceplant.com/collections/bucephalandra) · [Etsy](https://www.etsy.com/search?q=bucephalandra) |
-| Rotala rotundifolia (small bunch) | Turns pink/red under good light — adds color to the water | $5–8 | [BucePlant](https://buceplant.com/collections/rotala) · [Amazon](https://www.amazon.com/s?k=rotala+rotundifolia) |
-| Marimo moss balls x2–3 | Perfectly round, velvety green. Everyone loves these | $4–6 each | [Amazon](https://www.amazon.com/s?k=marimo+moss+ball) · [AquaticArts](https://aquaticarts.com/collections/marimo) |
-| Java moss | Oxygenation, shrimp habitat, natural look | $5–8 | [Amazon](https://www.amazon.com/s?k=java+moss) · [BucePlant](https://buceplant.com/collections/java-moss) |
+| Bucephalandra (red/blue variety) x1–2 | Metallic sheen, comes in reds, blues, greens. Attaches to rocks | $8–12 each | [Amazon](https://www.amazon.com/s?k=bucephalandra+live+aquarium+plant) · [Amazon](https://www.amazon.com/s?k=bucephalandra+aquarium+plant) |
+| Rotala rotundifolia (small bunch) | Turns pink/red under good light — adds color to the water | $5–8 | [Amazon](https://www.amazon.com/s?k=rotala+rotundifolia+live) · [Amazon](https://www.amazon.com/s?k=rotala+rotundifolia) |
+| Marimo moss balls x2–3 | Perfectly round, velvety green. Everyone loves these | $4–6 each | [Amazon](https://www.amazon.com/s?k=marimo+moss+ball) · [Amazon](https://www.amazon.com/s?k=marimo+moss+ball+live) |
+| Java moss | Oxygenation, shrimp habitat, natural look | $5–8 | [Amazon](https://www.amazon.com/s?k=java+moss) · [Amazon](https://www.amazon.com/s?k=java+moss+live+aquarium) |
 | Duckweed (small pinch) | Floating surface cover, nutrient absorption — will spread on its own | $3–5 | [Amazon](https://www.amazon.com/s?k=duckweed+aquarium) |
 
 ### Animals — Water Section
 
 | Animal | Quantity | Role | Approx. Price | Buy |
 |--------|----------|------|---------------|-----|
-| Opae ula shrimp (Hawaiian red shrimp) | 30+ | Bright red, live 20+ years, zero feeding. The water section stars | $30–50 | [Amazon](https://www.amazon.com/s?k=opae+ula+shrimp) · [Etsy](https://www.etsy.com/search?q=opae+ula+shrimp) |
-| Assassin snails (Clea helena) | 3–5 | Yellow/brown striped shells. Water apex predator — hunts other snails | $8–12 | [Amazon](https://www.amazon.com/s?k=assassin+snail) · [AquaticArts](https://aquaticarts.com/collections/snails) |
+| Opae ula shrimp (Hawaiian red shrimp) | 30+ | Bright red, live 20+ years, zero feeding. The water section stars | $30–50 | [Amazon](https://www.amazon.com/s?k=opae+ula+shrimp) · [Amazon](https://www.amazon.com/s?k=opae+ula+shrimp+live) |
+| Assassin snails (Clea helena) | 3–5 | Yellow/brown striped shells. Water apex predator — hunts other snails | $8–12 | [Amazon](https://www.amazon.com/s?k=assassin+snail) · [Amazon](https://www.amazon.com/s?k=aquarium+snails+live) |
 | Ramshorn snails | 8–10 | Algae control, waste processing, prey for assassin snails | $5–8 | [Amazon](https://www.amazon.com/s?k=ramshorn+snail) |
 | Bladder snails | 8–10 | Algae/detritus cleanup, prey for assassin snails | $3–5 (often free) | [Amazon](https://www.amazon.com/One-Stop-Aquatics-Freshwater-Bladder/dp/B00XS7TZXK) · Often free with plant orders |
 | Daphnia starter culture | 1 culture | Pulsing zooplankton swarms, mesmerizing to watch | $8–12 | [Amazon](https://www.amazon.com/s?k=daphnia+culture) |
 | Scuds (amphipods) starter culture | 1 culture | Fast-darting detritivores, very active | $8–12 | [Amazon](https://www.amazon.com/s?k=scud+amphipod+culture) |
-| Ostracod (seed shrimp) culture | 1 culture | Microfauna biodiversity layer | $8–12 | [Amazon](https://www.amazon.com/s?k=ostracod+culture) · [Etsy](https://www.etsy.com/search?q=ostracod+culture) |
+| Ostracod (seed shrimp) culture | 1 culture | Microfauna biodiversity layer | $8–12 | [Amazon](https://www.amazon.com/s?k=ostracod+culture) · [Amazon](https://www.amazon.com/s?k=ostracod+seed+shrimp+culture) |
 
 ### Stars of the Show
 
 | Animal | Quantity | Role | Approx. Price | Buy |
 |--------|----------|------|---------------|-----|
-| **Mourning geckos** (Lepidodactylus lugubris) | **3** | **All-female, self-cloning geckos.** Nocturnal, climb glass, eat springtails + fruit flies. Breed via parthenogenesis — population self-regulates and won't overgrow | $25–40 each | [JoshsFrogs](https://www.joshsfrogs.com/mourning-gecko-adult-lepidodactylus-lugubris-captive-bred.html) · [FrogDaddy](https://frogdaddy.net/products/lepidodactylus-lugubris-mourning-gecko) |
-| **Bumblebee dart frogs** (Dendrobates leucomelas) | **2** | **Stunning yellow + black banded frogs.** Bold, active during the day, eat fruit flies. Best beginner dart frog. Coexist perfectly with mourning geckos (different schedules — frogs are diurnal, geckos are nocturnal) | $50–60 each | [JoshsFrogs](https://www.joshsfrogs.com/dendrobates-leucomelas-bumble-bee-dart-frog.html) · [FrogDaddy](https://frogdaddy.net) |
+| **Mourning geckos** (Lepidodactylus lugubris) | **3** | **All-female, self-cloning geckos.** Nocturnal, climb glass, eat springtails + fruit flies. Breed via parthenogenesis — population self-regulates and won't overgrow | $25–40 each | [Amazon](https://www.amazon.com/s?k=mourning+gecko+lepidodactylus+lugubris) · [Amazon](https://www.amazon.com/s?k=mourning+gecko+live) |
+| **Bumblebee dart frogs** (Dendrobates leucomelas) | **2** | **Stunning yellow + black banded frogs.** Bold, active during the day, eat fruit flies. Best beginner dart frog. Coexist perfectly with mourning geckos (different schedules — frogs are diurnal, geckos are nocturnal) | $50–60 each | [Amazon](https://www.amazon.com/s?k=dendrobates+leucomelas+bumblebee+dart+frog) · [Amazon](https://www.amazon.com/s?k=dart+frog+live) |
 
 > **Why this combo works:** Mourning geckos are active at night while bumblebee dart frogs own the daytime — so you get 24/7 visible animal activity. Both eat the fruit flies and springtails already in the build. The geckos climb the upper glass while the frogs patrol the forest floor. Neither species is aggressive toward the other.
 
@@ -81,12 +81,12 @@
 
 | Animal | Quantity | Role | Approx. Price | Buy |
 |--------|----------|------|---------------|-----|
-| Springtail starter culture (large) | 1 culture (500+) | Essential decomposers, cleanup crew, prey species | $10–15 | [Amazon](https://www.amazon.com/s?k=springtail+culture) · [GlassBoxTropicals](https://www.glassboxtropicals.com/springtails-s/1835.htm) |
-| Dairy Cow isopods | 25–50 | Decomposers with striking white/black spotted pattern. Break down leaf litter and waste | $12–20 | [Amazon](https://www.amazon.com/s?k=dairy+cow+isopod) · [GlassBoxTropicals](https://www.glassboxtropicals.com/dairy-cow-isopods-p/gbt-isodc.htm) |
+| Springtail starter culture (large) | 1 culture (500+) | Essential decomposers, cleanup crew, prey species | $10–15 | [Amazon](https://www.amazon.com/s?k=springtail+culture) · [Amazon](https://www.amazon.com/s?k=springtail+culture+live) |
+| Dairy Cow isopods | 25–50 | Decomposers with striking white/black spotted pattern. Break down leaf litter and waste | $12–20 | [Amazon](https://www.amazon.com/s?k=dairy+cow+isopod) · [Amazon](https://www.amazon.com/s?k=dairy+cow+isopods+live) |
 | Small land snails | 5–8 | Grazers, algae/mold control | $5–10 | [Amazon](https://www.amazon.com/s?k=pet+land+snail) |
-| Flightless fruit fly culture (Drosophila melanogaster) | 1 culture | Self-breeding prey for geckos, dart frogs, and spider | $8–12 | [Amazon](https://www.amazon.com/s?k=flightless+fruit+fly+culture) · [JoshsFrogs](https://www.joshsfrogs.com/fruit-flies.html) |
-| **Bold jumping spider (Phidippus audax)** | **1** | **Land apex predator.** Active hunter, expressive eyes, tons of personality | $10–20 | [Phidippus.com](https://phidippus.com) · [PangeaReptile](https://www.pangeareptile.com/store/jumping-spiders.html) |
-| **Pseudoscorpions** | **5–10** | **Long-term backup apex.** Breed in the terrarium, take over predator role when spider eventually dies | $15–25 | [PangeaReptile](https://www.pangeareptile.com/store/pseudoscorpion.html) · [GlassBoxTropicals](https://www.glassboxtropicals.com/pseudoscorpion-p/gbt-pseudoscorpion.htm) |
+| Flightless fruit fly culture (Drosophila melanogaster) | 1 culture | Self-breeding prey for geckos, dart frogs, and spider | $8–12 | [Amazon](https://www.amazon.com/s?k=flightless+fruit+fly+culture) · [Amazon](https://www.amazon.com/s?k=flightless+fruit+fly+culture) |
+| **Bold jumping spider (Phidippus audax)** | **1** | **Land apex predator.** Active hunter, expressive eyes, tons of personality | $10–20 | [Amazon](https://www.amazon.com/s?k=bold+jumping+spider+live) · [Amazon](https://www.amazon.com/s?k=jumping+spider+phidippus+audax) |
+| **Pseudoscorpions** | **5–10** | **Long-term backup apex.** Breed in the terrarium, take over predator role when spider eventually dies | $15–25 | [Amazon](https://www.amazon.com/s?k=pseudoscorpion+live) · [Amazon](https://www.amazon.com/s?k=pseudoscorpion+live) |
 
 > **Why both?** The jumping spider is the exciting star but only lives ~1 year and won't breed in a sealed system. The pseudoscorpions are tiny, stay hidden, and breed indefinitely — so when the spider passes, the predator role carries on without you ever opening the tank. The spider won't hunt pseudoscorpions (they're too small and hide in leaf litter). They coexist perfectly.
 
@@ -248,7 +248,7 @@ Here's what's happening inside your sealed world:
 
 **Fruit fly colony:** The flightless flies breed in decaying organic matter. Naturally dropping/dying leaves in the terrarium sustain them long-term. The initial banana piece is just to kickstart the colony.
 
-**Where to buy:** Every item in the shopping list above has a direct buy link. Key sources: [Amazon](https://amazon.com) for hardware, substrates, and common species; [Etsy](https://etsy.com) for rare plants and invertebrates; [BucePlant](https://buceplant.com) for aquatic plants; [GlassBoxTropicals](https://glassboxtropicals.com) for terrarium plants, isopods, and springtails; [PangeaReptile](https://pangeareptile.com) for spiders and pseudoscorpions; [AquaticArts](https://aquaticarts.com) for snails and aquatic animals.
+**Where to buy:** Every item in the shopping list above has a direct buy link. Key sources: [Amazon](https://amazon.com) for hardware, substrates, and common species; [Amazon](https://www.amazon.com/s?k=terrarium+supplies) for rare plants and invertebrates; [Amazon](https://www.amazon.com/s?k=bucephalandra+aquarium) for aquatic plants; [Amazon](https://www.amazon.com/s?k=terrarium+plants) for terrarium plants, isopods, and springtails; [Amazon](https://www.amazon.com/s?k=reptile+terrarium+supplies) for spiders and pseudoscorpions; [Amazon](https://www.amazon.com/s?k=aquatic+arts+live) for snails and aquatic animals.
 
 **Grow light note:** The jewel orchid and peacock begonia look their best under moderate indirect light — too much direct light washes out the iridescence. Position the grow light slightly off to the side rather than directly overhead for the best visual effect.
 
