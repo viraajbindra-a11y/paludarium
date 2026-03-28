@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>15-Gallon Self-Sustaining Sealed Paludarium</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0a0f0d; color: #e0e8e4; min-height: 100vh; }
+  .hero {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background: linear-gradient(180deg, #0d1a14 0%, #0a0f0d 100%);
+  }
+  .hero h1 {
+    font-size: 2.8rem;
+    color: #6ee7b7;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+  }
+  .hero p {
+    color: #7a9e8e;
+    font-size: 1.15rem;
+    max-width: 600px;
+    margin: 0 auto 8px;
+    line-height: 1.6;
+  }
+  .hero .cost {
+    color: #34d399;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-top: 16px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 30px 24px 60px;
+  }
+  .card {
+    background: #111b16;
+    border: 1px solid #1a3a2a;
+    border-radius: 16px;
+    padding: 32px 28px;
+    text-decoration: none;
+    color: #e0e8e4;
+    transition: all 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .card:hover {
+    border-color: #34d399;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(52, 211, 153, 0.15);
+  }
+  .card-icon {
+    font-size: 2.4rem;
+    line-height: 1;
+  }
+  .card h2 {
+    font-size: 1.35rem;
+    color: #6ee7b7;
+    font-weight: 700;
+  }
+  .card p {
+    color: #7a9e8e;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    flex: 1;
+  }
+  .card .open {
+    color: #34d399;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .card .open::after {
+    content: '\2192';
+    transition: transform 0.2s;
+  }
+  .card:hover .open::after {
+    transform: translateX(4px);
+  }
+  .species-strip {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 24px 20px;
+  }
+  .species-strip img {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: #111b16;
+    border: 1px solid #1a3a2a;
+    padding: 4px;
+    transition: all 0.2s;
+  }
+  .species-strip img:hover {
+    border-color: #34d399;
+    transform: scale(1.25);
+    box-shadow: 0 0 12px rgba(52,211,153,0.3);
+  }
+  .footer {
+    text-align: center;
+    padding: 30px 20px 40px;
+    color: #4a6a5e;
+    font-size: 0.85rem;
+  }
+  .footer a {
+    color: #34d399;
+    text-decoration: none;
+  }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>Sealed Paludarium</h1>
+  <p>A fully self-sustaining miniature ecosystem in a 15-gallon glass tank. Land and water habitats, 26 species, zero maintenance after sealing.</p>
+  <p>The only input is light.</p>
+  <div class="cost">Estimated total: $350 - $550</div>
+</div>
+
+<div class="species-strip">
+  <img src="img/nobg/spider.png" alt="Jumping Spider" title="Bold Jumping Spider">
+  <img src="img/nobg/pseudoscorpion.png" alt="Pseudoscorpion" title="Pseudoscorpion">
+  <img src="img/nobg/opae-ula.png" alt="Opae Ula Shrimp" title="Opae Ula Shrimp">
+  <img src="img/nobg/assassin-snail.png" alt="Assassin Snail" title="Assassin Snail">
+  <img src="img/nobg/dairy-cow-isopod.png" alt="Dairy Cow Isopod" title="Dairy Cow Isopod">
+  <img src="img/nobg/springtails.png" alt="Springtails" title="Springtails">
+  <img src="img/nobg/ramshorn.png" alt="Ramshorn Snail" title="Ramshorn Snail">
+  <img src="img/nobg/daphnia.png" alt="Daphnia" title="Daphnia">
+  <img src="img/nobg/jewel-orchid.png" alt="Jewel Orchid" title="Jewel Orchid">
+  <img src="img/nobg/begonia.png" alt="Peacock Begonia" title="Peacock Begonia">
+  <img src="img/nobg/marcgravia.png" alt="Marcgravia" title="Marcgravia">
+  <img src="img/nobg/bucephalandra.png" alt="Bucephalandra" title="Bucephalandra">
+  <img src="img/nobg/marimo.png" alt="Marimo Moss Ball" title="Marimo Moss Ball">
+  <img src="img/nobg/mood-moss.png" alt="Mood Moss" title="Mood Moss">
+</div>
+
+<div class="cards">
+  <a href="gallery.html" class="card">
+    <div class="card-icon">&#129418;</div>
+    <h2>Species Gallery</h2>
+    <p>All 26 species with photos — hover to zoom. See the terrarium scene with every creature and plant positioned in its habitat.</p>
+    <span class="open">Open gallery</span>
+  </a>
+
+  <a href="shopping-list.html" class="card">
+    <div class="card-icon">&#128722;</div>
+    <h2>Shopping List</h2>
+    <p>Interactive checklist with prices and direct buy links for every item. Check things off as you shop. Print-friendly.</p>
+    <span class="open">Open shopping list</span>
+  </a>
+
+  <a href="cross-section.html" class="card">
+    <div class="card-icon">&#127757;</div>
+    <h2>Cross-Section Diagram</h2>
+    <p>SVG illustration showing every layer of the paludarium — drainage, substrate, water zones, plant placement, and animal habitats.</p>
+    <span class="open">View diagram</span>
+  </a>
+</div>
+
+<div class="footer">
+  <p>View the <a href="https://github.com/viraajbindra-a11y/paludarium">source on GitHub</a> &middot; Full build guide in <a href="https://github.com/viraajbindra-a11y/paludarium/blob/main/GUIDE.md">GUIDE.md</a></p>
+</div>
+
+</body>
+</html>
