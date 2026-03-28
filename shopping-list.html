@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>15-Gallon Self-Sustaining Paludarium Guide</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0a0f0d; color: #e0e8e4; line-height: 1.6; }
+  .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+  h1 { font-size: 2rem; color: #6ee7b7; text-align: center; margin: 30px 0 5px; }
+  .subtitle { text-align: center; color: #7a9e8e; margin-bottom: 40px; font-size: 0.95rem; }
+  h2 { font-size: 1.4rem; color: #34d399; margin: 35px 0 15px; padding-bottom: 8px; border-bottom: 2px solid #1a3a2a; }
+  h3 { font-size: 1.1rem; color: #6ee7b7; margin: 25px 0 12px; }
+  .section { background: #111b16; border-radius: 12px; padding: 25px; margin-bottom: 20px; border: 1px solid #1a3a2a; }
+  .checklist-item { display: flex; align-items: flex-start; padding: 8px 0; border-bottom: 1px solid #152520; gap: 10px; }
+  .checklist-item:last-child { border-bottom: none; }
+  .checklist-item input[type="checkbox"] { margin-top: 5px; accent-color: #34d399; width: 18px; height: 18px; flex-shrink: 0; cursor: pointer; }
+  .checklist-item label { cursor: pointer; flex: 1; }
+  .item-name { color: #e0e8e4; font-weight: 500; }
+  .item-detail { color: #7a9e8e; font-size: 0.85rem; display: block; margin-top: 2px; }
+  .item-price { color: #34d399; font-size: 0.85rem; font-weight: 600; white-space: nowrap; min-width: 70px; text-align: right; margin-top: 3px; }
+  .category-icon { margin-right: 6px; }
+  .phase { background: #111b16; border-radius: 12px; padding: 25px; margin-bottom: 15px; border: 1px solid #1a3a2a; }
+  .phase-header { display: flex; align-items: center; gap: 10px; margin-bottom: 15px; }
+  .phase-number { background: #34d399; color: #0a0f0d; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; flex-shrink: 0; }
+  .phase-title { font-size: 1.1rem; color: #6ee7b7; font-weight: 600; }
+  .step { margin: 12px 0; padding-left: 15px; border-left: 2px solid #1a3a2a; }
+  .step-title { color: #34d399; font-weight: 600; margin-bottom: 4px; }
+  .step p, .phase p { color: #b0c4b8; margin: 6px 0; }
+  .layer-list { margin: 10px 0 10px 20px; }
+  .layer-list li { color: #b0c4b8; margin: 4px 0; }
+  .layer-list li strong { color: #e0e8e4; }
+  .callout { background: #1a2f24; border-left: 3px solid #34d399; padding: 15px; border-radius: 0 8px 8px 0; margin: 15px 0; }
+  .callout-warning { border-left-color: #fbbf24; }
+  .callout-warning .callout-label { color: #fbbf24; }
+  .callout-label { color: #34d399; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 4px; }
+  .callout p { color: #b0c4b8; font-size: 0.9rem; }
+  .timeline { display: grid; grid-template-columns: auto 1fr; gap: 8px 15px; margin: 10px 0; }
+  .timeline-day { color: #34d399; font-weight: 700; font-size: 0.9rem; white-space: nowrap; padding-top: 2px; }
+  .timeline-content { color: #b0c4b8; }
+  .timeline-content strong { color: #e0e8e4; }
+  .monitor-table { width: 100%; margin: 15px 0; border-collapse: collapse; }
+  .monitor-table th { text-align: left; color: #34d399; padding: 8px; border-bottom: 2px solid #1a3a2a; font-size: 0.85rem; }
+  .monitor-table td { padding: 8px; border-bottom: 1px solid #152520; color: #b0c4b8; font-size: 0.9rem; vertical-align: top; }
+  .ecosystem-flow { background: #0d1a14; border-radius: 8px; padding: 15px; margin: 15px 0; }
+  .flow-item { display: flex; align-items: flex-start; gap: 8px; margin: 6px 0; }
+  .flow-arrow { color: #34d399; flex-shrink: 0; }
+  .flow-text { color: #b0c4b8; font-size: 0.9rem; }
+  .flow-text strong { color: #e0e8e4; }
+  .total-bar { background: linear-gradient(135deg, #1a3a2a, #0d2a1a); border-radius: 10px; padding: 20px; text-align: center; margin: 25px 0; border: 1px solid #34d399; }
+  .total-label { color: #7a9e8e; font-size: 0.9rem; }
+  .total-amount { color: #6ee7b7; font-size: 1.8rem; font-weight: 700; }
+  .buy-link { display: inline-block; background: #34d399; color: #0a0f0d; font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-decoration: none; margin-left: 8px; transition: background 0.2s; }
+  .buy-link:hover { background: #6ee7b7; }
+  .apex-badge { display: inline-block; background: #34d399; color: #0a0f0d; font-size: 0.7rem; font-weight: 700; padding: 2px 6px; border-radius: 4px; vertical-align: middle; margin-left: 5px; }
+  .notes-section p { color: #b0c4b8; margin: 10px 0; font-size: 0.9rem; }
+  .notes-section strong { color: #e0e8e4; }
+  .print-btn { position: fixed; bottom: 20px; right: 20px; background: #34d399; color: #0a0f0d; border: none; padding: 12px 20px; border-radius: 8px; font-weight: 700; cursor: pointer; font-size: 0.9rem; box-shadow: 0 4px 15px rgba(52,211,153,0.3); z-index: 100; }
+  .print-btn:hover { background: #6ee7b7; }
+  @media print {
+    body { background: #fff; color: #222; }
+    .section, .phase { border-color: #ccc; background: #fafafa; }
+    h1, h2, h3, .phase-title, .step-title, .callout-label { color: #1a6b4a; }
+    .item-name, .flow-text strong, .notes-section strong { color: #222; }
+    .item-detail, .item-price, .step p, .phase p, .flow-text, .callout p, .notes-section p, .monitor-table td, .timeline-content { color: #444; }
+    .print-btn { display: none; }
+    .total-bar { border-color: #1a6b4a; background: #f0faf5; }
+  }
+</style>
+</head>
+<body>
+
+<button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+
+<div class="container">
+  <h1>15-Gallon Self-Sustaining Sealed Paludarium</h1>
+  <p class="subtitle">Complete Shopping List & Build Guide</p>
+
+  <!-- SHOPPING LIST -->
+  <h2>Shopping List</h2>
+
+  <!-- Hardware -->
+  <div class="section">
+    <h3>Hardware</h3>
+    <div class="checklist-item">
+      <input type="checkbox" id="hw1"><label for="hw1"><span class="item-name">15-gallon glass tank + sealable glass lid <a class="buy-link" href="https://www.amazon.com/Lifegard-Aquatics-Gallon-Rimless-Aquarium/dp/B09QY3M3J4" target="_blank">Buy</a></span><span class="item-detail">Rimless aquarium + custom-cut glass lid works best</span></label><span class="item-price">$40–80</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="hw2"><label for="hw2"><span class="item-name">Aquarium-safe silicone sealant <a class="buy-link" href="https://www.amazon.com/Aquarium-Silicone-Waterproof-Non-Toxic-Transparent/dp/B0FBX3KTW8" target="_blank">Buy</a></span><span class="item-detail">100% silicone, no mold inhibitors. For lid seal + divider</span></label><span class="item-price">$8–12</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="hw3"><label for="hw3"><span class="item-name">Plexiglass divider</span><span class="item-detail">~6" tall, cut to tank width. Separates land/water zones</span></label><span class="item-price">$5–10</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="hw4"><label for="hw4"><span class="item-name">LED grow light + outlet timer <a class="buy-link" href="https://www.etsy.com/listing/1711285165/halo-ring-led-terrarium-grow-light-full" target="_blank">Buy</a></span><span class="item-detail">Low-wattage full-spectrum. Set to 10–12hr cycle. The only ongoing input</span></label><span class="item-price">$20–35</span>
+    </div>
+  </div>
+
+  <!-- Substrate -->
+  <div class="section">
+    <h3>Substrate & Layers</h3>
+    <div class="checklist-item">
+      <input type="checkbox" id="sub1"><label for="sub1"><span class="item-name">LECA (expanded clay aggregate) <a class="buy-link" href="https://shop.terrariumtribe.com/products/leca-clay-balls" target="_blank">Buy</a></span><span class="item-detail">2–3 lbs. Drainage layer (~1.5" deep)</span></label><span class="item-price">$8–12</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="sub2"><label for="sub2"><span class="item-name">Activated charcoal (horticultural) <a class="buy-link" href="https://www.amazon.com/Horticultural-Activated-Olivette-Horticulture-Byproducts/dp/B09SXX5Q8Q" target="_blank">Buy</a></span><span class="item-detail">1 lb. Thin filtration layer on top of LECA</span></label><span class="item-price">$6–10</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="sub3"><label for="sub3"><span class="item-name">Fiberglass mesh / landscape fabric</span><span class="item-detail">Cut to fit. Prevents soil mixing into drainage</span></label><span class="item-price">$5–8</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="sub4"><label for="sub4"><span class="item-name">ABG mix (terrarium soil) <a class="buy-link" href="https://www.pangeareptile.com/products/abg-substrate" target="_blank">Buy</a></span><span class="item-detail">3–4 lbs. Tree fern fiber, peat, charcoal, orchid bark, sphagnum</span></label><span class="item-price">$10–15</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="sub5"><label for="sub5"><span class="item-name">Long-fiber sphagnum moss <a class="buy-link" href="https://www.pangeareptile.com/products/long-fiber-sphagnum-moss" target="_blank">Buy</a></span><span class="item-detail">Top dressing and moisture retention</span></label><span class="item-price">$6–10</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="sub6"><label for="sub6"><span class="item-name">Fine aquarium gravel or sand</span><span class="item-detail">2–3 lbs, dark color. For the water section bottom</span></label><span class="item-price">$5–8</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="sub7"><label for="sub7"><span class="item-name">Small rocks / river stones</span><span class="item-detail">Land-to-water transition slope + decoration</span></label><span class="item-price">$5–10</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="sub8"><label for="sub8"><span class="item-name">Marine aquarium salt <a class="buy-link" href="https://www.petsmart.com/fish/food-and-care/salt-water-aquarium-care/instant-ocean-sea-salt-17999.html" target="_blank">Buy</a></span><span class="item-detail">For opae ula brackish water — 1 tbsp per gallon</span></label><span class="item-price">$5–8</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="sub9"><label for="sub9"><span class="item-name">Water conditioner / dechlorinator</span><span class="item-detail">Treat tap water before adding to tank</span></label><span class="item-price">$4–6</span>
+    </div>
+  </div>
+
+  <!-- Hardscape -->
+  <div class="section">
+    <h3>Hardscape & Decor</h3>
+    <div class="checklist-item">
+      <input type="checkbox" id="hs1"><label for="hs1"><span class="item-name">Driftwood (small piece) <a class="buy-link" href="https://www.amazon.com/aquarium-driftwood/s?k=aquarium+driftwood" target="_blank">Buy</a></span><span class="item-detail">Spider perch, visual anchor, plant mounting surface</span></label><span class="item-price">$5–10</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="hs2"><label for="hs2"><span class="item-name">Cork bark (flat piece) <a class="buy-link" href="https://shop.terrariumtribe.com/products/cork-bark" target="_blank">Buy</a></span><span class="item-detail">Hides for isopods and spider</span></label><span class="item-price">$5–8</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="hs3"><label for="hs3"><span class="item-name">Dried leaf litter (oak or magnolia) <a class="buy-link" href="https://www.amazon.com/Magnolia-Bioactive-Enclosures-Reptiles-Amphibians/dp/B0CBYJQVR9" target="_blank">Buy</a></span><span class="item-detail">Food for isopods/springtails, natural forest floor look</span></label><span class="item-price">$5–8</span>
+    </div>
+  </div>
+
+  <!-- Land Plants -->
+  <div class="section">
+    <h3>Land Plants</h3>
+    <div class="checklist-item">
+      <input type="checkbox" id="lp1"><label for="lp1"><span class="item-name">Jewel orchid (Macodes petola) x1 <a class="buy-link" href="https://www.etsy.com/listing/1663592912/macodes-petola-lighting-jewel-orchid" target="_blank">Buy</a></span><span class="item-detail">Dark velvety leaves with glowing gold lightning-bolt veins. The showpiece</span></label><span class="item-price">$15–25</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="lp2"><label for="lp2"><span class="item-name">Peacock begonia (Begonia pavonina) x1 <a class="buy-link" href="https://stevesleaves.com/products/begonia-pavonina" target="_blank">Buy</a></span><span class="item-detail">Iridescent blue-green shimmer under low light</span></label><span class="item-price">$12–20</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="lp3"><label for="lp3"><span class="item-name">Fittonia — pink/white vein varieties x2–3 <a class="buy-link" href="https://www.amazon.com/Pink-Nerve-Plant-Fittonia-Terrarium/dp/B00IC99QJC" target="_blank">Buy</a></span><span class="item-detail">Near-neon colors under grow lights</span></label><span class="item-price">$4–6 ea</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="lp4"><label for="lp4"><span class="item-name">Ruby red selaginella (S. erythropus) x1–2 <a class="buy-link" href="https://buceplant.com/products/selaginella-erythropus-ruby-red-club-moss" target="_blank">Buy</a></span><span class="item-detail">Deep red undersides, much more striking than plain green</span></label><span class="item-price">$6–8 ea</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="lp5"><label for="lp5"><span class="item-name">Marcgravia sintenisii x1 <a class="buy-link" href="https://glassboxtropicals.com/marcgravia-sintenisii/" target="_blank">Buy</a></span><span class="item-detail">Shingling vine — climbs glass/wood in geometric patterns</span></label><span class="item-price">$10–15</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="lp6"><label for="lp6"><span class="item-name">Miniature bromeliad (Neoregelia) x1 <a class="buy-link" href="https://www.neherpetoculture.com/bromeliads" target="_blank">Buy</a></span><span class="item-detail">Bright reds/pinks, holds tiny water pools in center</span></label><span class="item-price">$8–12</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="lp7"><label for="lp7"><span class="item-name">Mood moss (Dicranum) <a class="buy-link" href="https://shop.terrariumtribe.com/products/mood-moss" target="_blank">Buy</a></span><span class="item-detail">Fluffy mounded moss, lush texture</span></label><span class="item-price">$8–12</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="lp8"><label for="lp8"><span class="item-name">Fern moss (Thuidium) <a class="buy-link" href="https://shop.terrariumtribe.com/products/fern-moss" target="_blank">Buy</a></span><span class="item-detail">Delicate feathery texture, great contrast with mood moss</span></label><span class="item-price">$6–10</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="lp9"><label for="lp9"><span class="item-name">Baby tears (Soleirolia) x1 <a class="buy-link" href="https://plantsome.com/products/soleirolia-soleirolii-baby-tears-plant" target="_blank">Buy</a></span><span class="item-detail">Tiny-leaved carpet plant for gaps and shoreline</span></label><span class="item-price">$4–6</span>
+    </div>
+  </div>
+
+  <!-- Water Plants -->
+  <div class="section">
+    <h3>Water Plants</h3>
+    <div class="checklist-item">
+      <input type="checkbox" id="wp1"><label for="wp1"><span class="item-name">Bucephalandra (red or blue variety) x1–2 <a class="buy-link" href="https://buceplant.com/collections/bucephalandra" target="_blank">Buy</a></span><span class="item-detail">Metallic sheen, attaches to rocks. Stunning colors</span></label><span class="item-price">$8–12 ea</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="wp2"><label for="wp2"><span class="item-name">Rotala rotundifolia (small bunch) <a class="buy-link" href="https://shop.glassaqua.com/products/rotala-rotundifolia" target="_blank">Buy</a></span><span class="item-detail">Turns pink/red under good light</span></label><span class="item-price">$5–8</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="wp3"><label for="wp3"><span class="item-name">Marimo moss balls x2–3 <a class="buy-link" href="https://mossballpets.com/collections/moss-ball-pets" target="_blank">Buy</a></span><span class="item-detail">Perfectly round, velvety green. A crowd favorite</span></label><span class="item-price">$4–6 ea</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="wp4"><label for="wp4"><span class="item-name">Java moss <a class="buy-link" href="https://buceplant.com/products/java-moss-cup" target="_blank">Buy</a></span><span class="item-detail">Oxygenation, shrimp habitat, natural look</span></label><span class="item-price">$5–8</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="wp5"><label for="wp5"><span class="item-name">Duckweed (small pinch) <a class="buy-link" href="https://flipaquatics.com/products/duckweed" target="_blank">Buy</a></span><span class="item-detail">Floating surface cover — spreads fast, start small</span></label><span class="item-price">$3–5</span>
+    </div>
+  </div>
+
+  <!-- Water Animals -->
+  <div class="section">
+    <h3>Water Animals</h3>
+    <div class="checklist-item">
+      <input type="checkbox" id="wa1"><label for="wa1"><span class="item-name">Opae ula shrimp (Hawaiian red) x30+ <a class="buy-link" href="https://www.shrimpbubble.com/products/live-opae-ula-3-shrimp" target="_blank">Buy</a></span><span class="item-detail">Bright red, live 20+ years, zero feeding needed. The water stars</span></label><span class="item-price">$30–50</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="wa2"><label for="wa2"><span class="item-name">Assassin snails (Clea helena) x3–5 <a class="buy-link" href="https://aquaticarts.com/products/assassin-snails" target="_blank">Buy</a></span><span class="item-detail">Beautiful striped shells. Water apex — hunts other snails</span></label><span class="item-price">$8–12</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="wa3"><label for="wa3"><span class="item-name">Ramshorn snails x8–10 <a class="buy-link" href="https://www.theshrimpfarm.com/freshwater-snail/ramshorn-snails.html" target="_blank">Buy</a></span><span class="item-detail">Algae control + prey for assassin snails</span></label><span class="item-price">$5–8</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="wa4"><label for="wa4"><span class="item-name">Bladder snails x8–10</span><span class="item-detail">Detritus cleanup + prey for assassin snails</span></label><span class="item-price">$3–5</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="wa5"><label for="wa5"><span class="item-name">Daphnia starter culture <a class="buy-link" href="https://aquaticarts.com/products/aquatic-arts-live-daphnia-culture" target="_blank">Buy</a></span><span class="item-detail">Pulsing zooplankton swarms — mesmerizing</span></label><span class="item-price">$8–12</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="wa6"><label for="wa6"><span class="item-name">Scuds (amphipods) starter culture <a class="buy-link" href="https://aquaticarts.com/products/aquatic-arts-live-scud-culture" target="_blank">Buy</a></span><span class="item-detail">Fast-darting detritivores, very active</span></label><span class="item-price">$8–12</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="wa7"><label for="wa7"><span class="item-name">Ostracod (seed shrimp) culture <a class="buy-link" href="https://abquatics.shop/products/seed-shrimp-ostracod-starter-pack-live-food-starter-pack-50" target="_blank">Buy</a></span><span class="item-detail">Microfauna biodiversity layer</span></label><span class="item-price">$8–12</span>
+    </div>
+  </div>
+
+  <!-- Land Animals -->
+  <div class="section">
+    <h3>Land Animals</h3>
+    <div class="checklist-item">
+      <input type="checkbox" id="la1"><label for="la1"><span class="item-name">Springtail culture (large, 500+) <a class="buy-link" href="https://iheartbugs.com/products/large-producing-master-springtail-cultures" target="_blank">Buy</a></span><span class="item-detail">Essential decomposers, cleanup crew, prey species</span></label><span class="item-price">$10–15</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="la2"><label for="la2"><span class="item-name">Dwarf white isopods x25–50 <a class="buy-link" href="https://rubberduckyisopods.com/products/white-dwarf" target="_blank">Buy</a></span><span class="item-detail">Decomposers, prey species</span></label><span class="item-price">$10–15</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="la3"><label for="la3"><span class="item-name">Dwarf purple isopods x15–25 <a class="buy-link" href="https://rubberduckyisopods.com/products/dwarf-purple-isopods-coasta-rican-purple-trichoniscus-sp-20-count" target="_blank">Buy</a></span><span class="item-detail">Decomposers, visual variety</span></label><span class="item-price">$12–18</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="la4"><label for="la4"><span class="item-name">Small land snails x5–8</span><span class="item-detail">Grazers, algae/mold control</span></label><span class="item-price">$5–10</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="la5"><label for="la5"><span class="item-name">Flightless fruit fly culture <a class="buy-link" href="https://www.crazyfroglady.com/product/flightless-fruit-fly-culture-4-pack-/105" target="_blank">Buy</a></span><span class="item-detail">Self-breeding prey population for the spider</span></label><span class="item-price">$8–12</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="la6"><label for="la6"><span class="item-name">Bold jumping spider (Phidippus audax) x1 <span class="apex-badge">APEX</span> <a class="buy-link" href="https://jumpingspidersforsale.com/products/available-jumping-spiders/bold-jumping-spider-phidippus-audax-52473656" target="_blank">Buy</a></span><span class="item-detail">Active hunter, huge expressive eyes, tons of personality. Lives ~1 year</span></label><span class="item-price">$10–20</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="la7"><label for="la7"><span class="item-name">Pseudoscorpions x5–10 <span class="apex-badge">BACKUP APEX</span> <a class="buy-link" href="https://bugsincyberspace.com/product/pseudoscorpions/" target="_blank">Buy</a></span><span class="item-detail">Breed in terrarium — permanent predator after spider passes</span></label><span class="item-price">$15–25</span>
+    </div>
+  </div>
+
+  <!-- Tools -->
+  <div class="section">
+    <h3>Tools (Build Phase Only)</h3>
+    <div class="checklist-item">
+      <input type="checkbox" id="t1"><label for="t1"><span class="item-name">Long aquascaping tweezers <a class="buy-link" href="https://www.amazon.com/Aquarium-Tweezers-Liveek-Stainless-Aquascape/dp/B07ZLQRJWH" target="_blank">Buy</a></span><span class="item-detail">For planting in tight spots</span></label><span class="item-price">$8–12</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="t2"><label for="t2"><span class="item-name">Spray bottle</span><span class="item-detail">Initial misting</span></label><span class="item-price">$3–5</span>
+    </div>
+    <div class="checklist-item">
+      <input type="checkbox" id="t3"><label for="t3"><span class="item-name">Thermometer/hygrometer (optional)</span><span class="item-detail">Monitor conditions during first few weeks</span></label><span class="item-price">$5–8</span>
+    </div>
+  </div>
+
+  <div class="total-bar">
+    <div class="total-label">Estimated Total</div>
+    <div class="total-amount">$350 – $550</div>
+  </div>
+
+  <!-- BUILD INSTRUCTIONS -->
+  <h2>Build Instructions</h2>
+
+  <div class="phase">
+    <div class="phase-header"><div class="phase-number">1</div><div class="phase-title">Tank Structure — Day 1</div></div>
+    <div class="step">
+      <div class="step-title">Plan your layout</div>
+      <p>Divide the tank roughly 60% land / 40% water. Water section on one side, not the center — this gives you a natural shoreline and more usable land area.</p>
+    </div>
+    <div class="step">
+      <div class="step-title">Install the divider</div>
+      <p>Cut plexiglass to fit tank width, about 5–6" tall. Silicone it in place at the 40% mark. Let cure 24 hours. Doesn't need to be perfectly watertight — slight seepage is fine.</p>
+    </div>
+    <div class="step">
+      <div class="step-title">Build the water section</div>
+      <p>Add 1–1.5" of aquarium gravel/sand on the water side. Place rocks for visual interest and shrimp hiding spots. Create a gradual slope toward the divider.</p>
+    </div>
+    <div class="step">
+      <div class="step-title">Build the land drainage layers</div>
+      <p>Stack in order on the land side:</p>
+      <ol class="layer-list">
+        <li><strong>LECA</strong> — 1.5" deep across entire land section</li>
+        <li><strong>Mesh/landscape fabric</strong> — cut to fit, laid flat</li>
+        <li><strong>Activated charcoal</strong> — thin layer (~0.5")</li>
+        <li><strong>ABG soil mix</strong> — 2–3" deep, higher at back, sloping toward water</li>
+      </ol>
+    </div>
+    <div class="step">
+      <div class="step-title">Add hardscape</div>
+      <p>Press driftwood and cork bark into the soil. Create caves/overhangs with cork bark for isopod and spider hides. Place rocks along the shoreline. Make sure driftwood has a prominent perch — the spider will use it as a hunting lookout.</p>
+    </div>
+  </div>
+
+  <div class="phase">
+    <div class="phase-header"><div class="phase-number">2</div><div class="phase-title">Planting — Day 2</div></div>
+    <div class="step">
+      <div class="step-title">Plant the land section (back to front)</div>
+      <p><strong>Back:</strong> Marcgravia against the back glass (it'll shingle up over time), peacock begonia for height.</p>
+      <p><strong>Middle:</strong> Jewel orchid as centerpiece, fittonia around it for pops of pink/white, ruby red selaginella for contrast.</p>
+      <p><strong>Front/shoreline:</strong> Baby tears as ground carpet, mini bromeliad near water's edge.</p>
+      <p><strong>Ground cover:</strong> Press mood moss and fern moss into all bare soil — mix both for texture.</p>
+      <p><strong>Forest floor:</strong> Scatter dried leaf litter around cork bark and between plants.</p>
+    </div>
+    <div class="step">
+      <div class="step-title">Plant the water section</div>
+      <p>Tie java moss to rocks. Attach bucephalandra to rocks (don't bury rhizome). Plant rotala in gravel at the back. Drop marimo balls onto gravel. Add a tiny pinch of duckweed to the surface.</p>
+    </div>
+    <div class="step">
+      <div class="step-title">Add water</div>
+      <p>Mix dechlorinated water with marine aquarium salt (~1 tbsp per gallon). Slowly fill the water section to 1" below divider top. Mist the entire land section until soil is damp but not waterlogged.</p>
+    </div>
+    <div class="callout">
+      <div class="callout-label">Wait</div>
+      <p>Let the fully planted tank sit for 48 hours before adding any animals. This lets water chemistry stabilize and plants settle in.</p>
+    </div>
+  </div>
+
+  <div class="phase">
+    <div class="phase-header"><div class="phase-number">3</div><div class="phase-title">Animal Introduction — Days 4–21</div></div>
+    <p>Order matters — prey populations must be booming before predators go in.</p>
+    <div class="timeline">
+      <div class="timeline-day">Day 4</div>
+      <div class="timeline-content"><strong>Microfauna:</strong> Spread springtails across land (focus on leaf litter/moss). Release dwarf isopods under cork bark. Add ostracod + daphnia cultures to water.</div>
+      <div class="timeline-day">Day 7</div>
+      <div class="timeline-content"><strong>Snails & scuds:</strong> Add ramshorn + bladder snails to water. Add land snails to land section. Release scuds into water.</div>
+      <div class="timeline-day">Day 10</div>
+      <div class="timeline-content"><strong>Shrimp & assassins:</strong> Float opae ula in shipping water for 30 min to acclimate, then release. Add assassin snails to water.</div>
+      <div class="timeline-day">Day 14</div>
+      <div class="timeline-content"><strong>Fruit flies:</strong> Introduce flightless fruit fly culture to land. Place a small piece of overripe banana under a leaf to kickstart breeding.</div>
+      <div class="timeline-day">Day 21</div>
+      <div class="timeline-content"><strong>Apex predators:</strong> Scatter pseudoscorpions across land near leaf litter. Gently place the jumping spider on driftwood or cork bark.</div>
+    </div>
+  </div>
+
+  <div class="phase">
+    <div class="phase-header"><div class="phase-number">4</div><div class="phase-title">Seal & Monitor — Day 21+</div></div>
+    <div class="step">
+      <div class="step-title">Seal the tank</div>
+      <p>Once all animals are active, seal the glass lid with aquarium-safe silicone. Fully airtight. Plants produce O₂, animals produce CO₂ — the cycle sustains itself.</p>
+    </div>
+    <div class="step">
+      <div class="step-title">Position and light</div>
+      <p>Place in indirect natural light — never direct sunlight (overheats and kills everything). Set LED grow light on timer: 10–12 hours/day. This is the only ongoing input.</p>
+    </div>
+    <div class="step">
+      <div class="step-title">Monitor for 2–4 weeks</div>
+    </div>
+    <table class="monitor-table">
+      <tr><th>What You See</th><th>Means</th><th>Action</th></tr>
+      <tr><td>Light condensation in morning</td><td>Water cycle working perfectly</td><td>Nothing — ideal</td></tr>
+      <tr><td>Heavy fog / can't see through</td><td>Too much moisture</td><td>Briefly unseal, let moisture escape, reseal</td></tr>
+      <tr><td>No condensation</td><td>Too dry</td><td>Briefly unseal, mist lightly, reseal</td></tr>
+      <tr><td>White mold on soil/wood</td><td>Normal — springtails eat it</td><td>Wait 1–2 weeks</td></tr>
+      <tr><td>Plants yellowing</td><td>Light too strong or weak</td><td>Adjust grow light distance/hours</td></tr>
+      <tr><td>Spider webbing in a corner</td><td>It's settled and comfortable</td><td>Good sign</td></tr>
+    </table>
+    <div class="callout">
+      <div class="callout-label">Done</div>
+      <p>After 4–6 weeks of stable conditions (steady condensation, clear water, active animals, growing plants) — walk away and enjoy forever.</p>
+    </div>
+  </div>
+
+  <div class="phase">
+    <div class="phase-header"><div class="phase-number">5</div><div class="phase-title">How the Ecosystem Works</div></div>
+    <div class="ecosystem-flow">
+      <div class="flow-item"><span class="flow-arrow">&#9654;</span><span class="flow-text"><strong>Plants</strong> photosynthesize — produce O₂, absorb CO₂</span></div>
+      <div class="flow-item"><span class="flow-arrow">&#9654;</span><span class="flow-text"><strong>Water</strong> evaporates — condenses on glass — drips back down (rain cycle)</span></div>
+      <div class="flow-item"><span class="flow-arrow">&#9654;</span><span class="flow-text"><strong>Springtails & isopods</strong> eat dead matter — produce nutrients for plants</span></div>
+      <div class="flow-item"><span class="flow-arrow">&#9654;</span><span class="flow-text"><strong>Aquatic plants</strong> oxygenate water — absorb ammonia and waste</span></div>
+      <div class="flow-item"><span class="flow-arrow">&#9654;</span><span class="flow-text"><strong>Opae ula shrimp</strong> graze algae — keep water crystal clear</span></div>
+      <div class="flow-item"><span class="flow-arrow">&#9654;</span><span class="flow-text"><strong>Ramshorn & bladder snails</strong> breed + eat algae — hunted by assassin snails</span></div>
+      <div class="flow-item"><span class="flow-arrow">&#9654;</span><span class="flow-text"><strong>Assassin snails</strong> regulate snail populations — prevent overpopulation</span></div>
+      <div class="flow-item"><span class="flow-arrow">&#9654;</span><span class="flow-text"><strong>Daphnia & scuds</strong> eat microorganisms — maintain water clarity</span></div>
+      <div class="flow-item"><span class="flow-arrow">&#9654;</span><span class="flow-text"><strong>Fruit flies</strong> breed on decaying matter — hunted by the spider</span></div>
+      <div class="flow-item"><span class="flow-arrow">&#9654;</span><span class="flow-text"><strong>Jumping spider</strong> hunts flies, springtails, isopods — land apex predator</span></div>
+      <div class="flow-item"><span class="flow-arrow">&#9654;</span><span class="flow-text"><strong>Pseudoscorpions</strong> hunt springtails/mites — permanent backup apex</span></div>
+      <div class="flow-item"><span class="flow-arrow">&#9654;</span><span class="flow-text"><strong>Everything that dies</strong> gets consumed — nutrients cycle back to plants</span></div>
+    </div>
+  </div>
+
+  <!-- Important Notes -->
+  <h2>Important Notes</h2>
+  <div class="section notes-section">
+    <p><strong>Spider lifespan:</strong> Bold jumping spiders live ~8–14 months. When it dies, springtails and isopods consume the body. Pseudoscorpions seamlessly continue as apex predator. You can unseal and add a new spider if you want — but the ecosystem keeps running without one.</p>
+    <p><strong>Opae ula water:</strong> These need slightly brackish (salty) water. The 1 tbsp marine salt per gallon is critical — add during setup before any animals go in. Other aquatic animals tolerate light brackish.</p>
+    <p><strong>Water volume:</strong> Aim for 4–5 gallons of actual water. More water = more stable chemistry.</p>
+    <p><strong>Temperature:</strong> Room temp (65–80°F / 18–27°C). Avoid heating vents, AC, and direct-sun windows.</p>
+    <p><strong>Fruit fly colony:</strong> Naturally dropping/dying leaves sustain them long-term. Initial banana piece just kickstarts the colony.</p>
+    <p><strong>Grow light tip:</strong> Jewel orchid and peacock begonia look best under moderate indirect light — position the grow light slightly off to the side for the best iridescence effect.</p>
+    <p><strong>Where to buy:</strong> Search "bioactive terrarium starter kit" for springtail + isopod bundles, "opae ula shrimp" from dedicated shrimp breeders, "Phidippus audax" from jumping spider breeders, and assassin snails at aquarium stores.</p>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Paludarium — Real Species Preview</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0f0d; font-family: 'Segoe UI', system-ui, sans-serif; color: #e0e8e4; }
+  .hero { text-align: center; padding: 25px 20px 10px; }
+  .hero h1 { color: #6ee7b7; font-size: 1.8rem; }
+  .hero p { color: #7a9e8e; font-size: 0.85rem; margin-top: 4px; }
+
+  /* === TERRARIUM SCENE === */
+  .terrarium {
+    position: relative;
+    width: 950px; height: 620px;
+    margin: 20px auto;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 3px solid #3a6a5a;
+    box-shadow: 0 0 50px rgba(52,211,153,0.08), inset 0 0 80px rgba(0,0,0,0.5);
+  }
+  .bg-land { position: absolute; left: 0; top: 0; width: 60%; height: 100%; background: linear-gradient(180deg, #0d1a14 0%, #112a1e 50%, #1a3020 80%, #2a1d14 100%); }
+  .bg-water { position: absolute; right: 0; top: 0; width: 42%; height: 100%; background: linear-gradient(180deg, #0d1520 0%, #0a2540 40%, #082838 80%, #0a1a2a 100%); }
+  .water-surface { position: absolute; right: 0; top: 45%; width: 42%; height: 2px; background: linear-gradient(90deg, rgba(56,189,248,0.5), rgba(56,189,248,0.2), rgba(56,189,248,0.4)); z-index: 3; }
+  .divider { position: absolute; left: 58%; top: 40%; width: 3px; height: 60%; background: rgba(136,170,187,0.25); z-index: 3; }
+  .soil { position: absolute; left: 0; bottom: 0; width: 60%; height: 28%; background: linear-gradient(180deg, #3d2b1f 0%, #2a1d14 60%, #6B4F10 100%); border-radius: 0 30px 0 0; z-index: 2; }
+  .gravel { position: absolute; right: 0; bottom: 0; width: 42%; height: 15%; background: linear-gradient(180deg, #3a3a3a, #2a2a2a); z-index: 2; }
+  .glass-lid { position: absolute; top: 0; left: 0; right: 0; height: 6px; background: linear-gradient(90deg, #2a4a3a, #4a7a6a, #2a4a3a); z-index: 10; }
+  .light { position: absolute; top: 0; left: 20%; width: 60%; height: 250px; background: radial-gradient(ellipse at top, rgba(254,249,195,0.06) 0%, transparent 70%); z-index: 1; pointer-events: none; }
+  .reflection { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, transparent 40%, rgba(255,255,255,0.02) 100%); z-index: 9; pointer-events: none; }
+
+  .condensation { position: absolute; top: 10px; left: 0; right: 0; z-index: 8; pointer-events: none; }
+  .condensation i { position: absolute; width: 3px; height: 3px; background: rgba(255,255,255,0.1); border-radius: 50%; animation: pulse 5s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { opacity: 0.05; } 50% { opacity: 0.2; } }
+
+  .zone { position: absolute; font-size: 10px; color: #3a6a5a; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; z-index: 4; pointer-events: none; }
+
+  /* Species bubbles — transparent PNGs look great without border-radius */
+  .sp {
+    position: absolute; z-index: 6;
+    display: flex; flex-direction: column; align-items: center;
+    transition: z-index 0s;
+  }
+  .sp img {
+    object-fit: contain;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.7));
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .sp img:hover {
+    transform: scale(2.2);
+    filter: drop-shadow(0 8px 20px rgba(52,211,153,0.5));
+    z-index: 200;
+    position: relative;
+  }
+  .sp .name {
+    font-size: 8px; color: #6ee7b7; margin-top: 3px;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.9);
+    text-align: center; white-space: nowrap;
+    pointer-events: none;
+  }
+  .sp .badge {
+    font-size: 6.5px; font-weight: 700;
+    background: #34d399; color: #0a0f0d;
+    padding: 1px 5px; border-radius: 3px;
+    margin-top: 2px; pointer-events: none;
+  }
+
+  @keyframes swim { 0%,100% { transform: translateX(0); } 50% { transform: translateX(8px); } }
+  @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+  .swim { animation: swim 3.5s ease-in-out infinite; }
+  .float { animation: float 3s ease-in-out infinite; }
+
+  /* Gallery grid */
+  .gallery { max-width: 950px; margin: 30px auto; padding: 0 20px 50px; }
+  .gallery h2 { color: #34d399; font-size: 1.2rem; text-align: center; margin-bottom: 20px; border-bottom: 2px solid #1a3a2a; padding-bottom: 8px; }
+  .section-label { color: #6ee7b7; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin: 22px 0 10px; padding: 6px 12px; background: linear-gradient(90deg, #111b16, transparent); border-left: 3px solid #34d399; grid-column: 1 / -1; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; }
+  .card {
+    background: #111b16; border: 1px solid #1a3a2a; border-radius: 10px;
+    overflow: hidden; transition: all 0.2s;
+  }
+  .card:hover { transform: translateY(-3px); border-color: #34d399; }
+  .card img { width: 100%; height: 150px; object-fit: contain; background: #0d1a14; padding: 8px; }
+  .card .info { padding: 10px; }
+  .card h4 { color: #e0e8e4; font-size: 0.82rem; margin-bottom: 2px; }
+  .card p { color: #7a9e8e; font-size: 0.72rem; line-height: 1.4; }
+  .card .tag { display: inline-block; font-size: 0.62rem; padding: 2px 6px; border-radius: 3px; margin-top: 5px; }
+  .tag-apex { background: #34d399; color: #0a0f0d; font-weight: 700; }
+  .tag-land { background: #1a3a2a; color: #6ee7b7; }
+  .tag-water { background: #0d2a3a; color: #7dd3fc; }
+  .tag-plant { background: #1a3a1a; color: #86efac; }
+
+  .footer-note { text-align: center; color: #4a6a5e; font-size: 0.75rem; padding: 20px; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>Your 15-Gallon Sealed Paludarium</h1>
+  <p>Hover any species to zoom in — scroll down for full gallery with details</p>
+</div>
+
+<div class="terrarium">
+  <div class="bg-land"></div>
+  <div class="bg-water"></div>
+  <div class="water-surface"></div>
+  <div class="divider"></div>
+  <div class="soil"></div>
+  <div class="gravel"></div>
+  <div class="glass-lid"></div>
+  <div class="light"></div>
+  <div class="reflection"></div>
+
+  <div class="condensation">
+    <i style="left:8%;top:5px"></i><i style="left:22%;top:15px;animation-delay:1s"></i>
+    <i style="left:40%;top:8px;animation-delay:2s"></i><i style="left:55%;top:12px;animation-delay:0.5s"></i>
+    <i style="left:70%;top:6px;animation-delay:1.5s"></i><i style="left:85%;top:10px;animation-delay:0.8s"></i>
+  </div>
+
+  <div class="zone" style="left:20%;top:40%">Land Zone</div>
+  <div class="zone" style="right:12%;top:40%">Water Zone</div>
+
+  <!-- ========== ENVIRONMENT: Driftwood, rocks, branches, foliage ========== -->
+  <svg class="env" style="position:absolute;left:0;top:0;width:100%;height:100%;z-index:3;pointer-events:none;" viewBox="0 0 950 620" preserveAspectRatio="none">
+    <!-- Main driftwood branch rising from soil -->
+    <path d="M180,500 Q200,420 170,340 Q150,280 180,220 Q200,180 190,140" stroke="#5a3d2b" stroke-width="12" fill="none" stroke-linecap="round" opacity="0.85"/>
+    <path d="M180,340 Q210,310 240,290" stroke="#5a3d2b" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M170,280 Q140,260 120,230" stroke="#5a3d2b" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.65"/>
+    <path d="M190,200 Q220,180 250,170" stroke="#4a3422" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Second smaller branch on right side of land -->
+    <path d="M420,490 Q440,430 430,370 Q425,320 450,280" stroke="#4a3422" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.75"/>
+    <path d="M430,370 Q460,350 480,330" stroke="#4a3422" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.55"/>
+
+    <!-- Rocks on soil surface -->
+    <ellipse cx="80" cy="460" rx="28" ry="14" fill="#3a3530" opacity="0.8"/>
+    <ellipse cx="85" cy="458" rx="26" ry="12" fill="#4a4540" opacity="0.5"/>
+    <ellipse cx="320" cy="475" rx="22" ry="10" fill="#3d3830" opacity="0.75"/>
+    <ellipse cx="500" cy="465" rx="18" ry="9" fill="#3a3530" opacity="0.7"/>
+
+    <!-- Small rocks in water gravel -->
+    <ellipse cx="650" cy="555" rx="12" ry="6" fill="#4a4a4a" opacity="0.6"/>
+    <ellipse cx="750" cy="548" rx="10" ry="5" fill="#555" opacity="0.5"/>
+    <ellipse cx="850" cy="555" rx="14" ry="7" fill="#4a4a4a" opacity="0.55"/>
+
+    <!-- Driftwood piece in water section -->
+    <path d="M620,520 Q680,500 730,510 Q760,515 780,505" stroke="#5a4030" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <path d="M730,510 Q740,490 760,480" stroke="#5a4030" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- Hanging vines/roots from main branch -->
+    <path d="M175,260 Q165,290 170,320" stroke="#2a5a30" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M195,220 Q185,250 190,280" stroke="#2a5a30" stroke-width="1.5" fill="none" opacity="0.4"/>
+    <path d="M185,180 Q170,210 175,240" stroke="#2a5a30" stroke-width="1.5" fill="none" opacity="0.35"/>
+
+    <!-- Leaf litter on soil -->
+    <ellipse cx="140" cy="470" rx="8" ry="3" fill="#5a4020" opacity="0.5" transform="rotate(-20 140 470)"/>
+    <ellipse cx="260" cy="480" rx="7" ry="2.5" fill="#4a3518" opacity="0.45" transform="rotate(15 260 480)"/>
+    <ellipse cx="380" cy="472" rx="6" ry="2" fill="#5a4525" opacity="0.4" transform="rotate(-30 380 472)"/>
+    <ellipse cx="200" cy="478" rx="7" ry="2.5" fill="#6a5030" opacity="0.35" transform="rotate(10 200 478)"/>
+    <ellipse cx="460" cy="468" rx="5" ry="2" fill="#4a3518" opacity="0.4" transform="rotate(-15 460 468)"/>
+
+    <!-- Small fern fronds on branch -->
+    <path d="M240,290 Q250,275 260,265 M250,275 Q258,270 262,260 M245,280 Q255,273 258,265" stroke="#2d6b3a" stroke-width="1.5" fill="none" opacity="0.5"/>
+    <path d="M120,230 Q110,215 105,200 M115,222 Q108,212 105,200" stroke="#2d6b3a" stroke-width="1.5" fill="none" opacity="0.45"/>
+
+    <!-- Bubbles in water -->
+    <circle cx="700" cy="380" r="3" fill="none" stroke="rgba(150,220,255,0.2)" stroke-width="0.5">
+      <animate attributeName="cy" from="380" to="280" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" from="0.3" to="0" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="800" cy="400" r="2" fill="none" stroke="rgba(150,220,255,0.15)" stroke-width="0.5">
+      <animate attributeName="cy" from="400" to="290" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" from="0.25" to="0" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="680" cy="420" r="2.5" fill="none" stroke="rgba(150,220,255,0.2)" stroke-width="0.5">
+      <animate attributeName="cy" from="420" to="300" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" from="0.2" to="0" dur="6s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Substrate layers visible on land side -->
+    <path d="M0,460 Q120,455 250,462 Q380,468 550,458" stroke="#6B4F10" stroke-width="1" fill="none" opacity="0.3"/>
+    <path d="M0,480 Q100,478 200,482 Q350,486 550,478" stroke="#8B6F30" stroke-width="1" fill="none" opacity="0.2"/>
+  </svg>
+
+  <!-- ========== LAND PLANTS ========== -->
+  <div class="sp" style="left:5%;top:8%">
+    <img src="img/nobg/begonia.png" width="75" height="75" alt="Peacock Begonia">
+    <span class="name">Peacock Begonia</span>
+  </div>
+
+  <div class="sp" style="left:24%;top:5%">
+    <img src="img/nobg/jewel-orchid.png" width="80" height="80" alt="Jewel Orchid">
+    <span class="name">Jewel Orchid</span>
+  </div>
+
+  <div class="sp" style="left:12%;top:28%">
+    <img src="img/nobg/fittonia.png" width="60" height="60" alt="Fittonia">
+    <span class="name">Fittonia (Pink)</span>
+  </div>
+
+  <div class="sp" style="left:38%;top:12%">
+    <img src="img/nobg/selaginella.png" width="55" height="55" alt="Selaginella">
+    <span class="name">Ruby Selaginella</span>
+  </div>
+
+  <div class="sp" style="left:2%;top:26%">
+    <img src="img/nobg/mood-moss.png" width="52" height="52" alt="Mood Moss">
+    <span class="name">Mood Moss</span>
+  </div>
+
+  <div class="sp" style="left:48%;top:22%">
+    <img src="img/nobg/bromeliad.png" width="58" height="58" alt="Bromeliad">
+    <span class="name">Mini Bromeliad</span>
+  </div>
+
+  <div class="sp" style="left:1%;top:44%">
+    <img src="img/nobg/marcgravia.png" width="46" height="46" alt="Marcgravia">
+    <span class="name">Marcgravia</span>
+  </div>
+
+  <!-- ========== LAND ANIMALS ========== -->
+  <div class="sp" style="left:28%;top:30%">
+    <img src="img/nobg/spider.png" width="85" height="85" alt="Jumping Spider">
+    <span class="name">Bold Jumping Spider</span>
+    <span class="badge">APEX PREDATOR</span>
+  </div>
+
+  <div class="sp" style="left:7%;top:56%">
+    <img src="img/nobg/pseudoscorpion.png" width="52" height="52" alt="Pseudoscorpion">
+    <span class="name">Pseudoscorpion</span>
+    <span class="badge">BACKUP APEX</span>
+  </div>
+
+  <div class="sp float" style="left:22%;top:46%">
+    <img src="img/nobg/fruit-fly.png" width="42" height="42" alt="Fruit Fly">
+    <span class="name">Fruit Flies</span>
+  </div>
+
+  <div class="sp" style="left:38%;top:56%">
+    <img src="img/nobg/springtails.png" width="44" height="44" alt="Springtails">
+    <span class="name">Springtails</span>
+  </div>
+
+  <div class="sp" style="left:18%;top:62%">
+    <img src="img/nobg/dairy-cow-isopod.png" width="55" height="55" alt="Dairy Cow Isopods">
+    <span class="name">Dairy Cow Isopods</span>
+  </div>
+
+  <div class="sp" style="left:42%;top:46%">
+    <img src="img/nobg/land-snail.png" width="46" height="46" alt="Land Snail">
+    <span class="name">Land Snail</span>
+  </div>
+
+  <!-- ========== WATER PLANTS ========== -->
+  <div class="sp" style="right:2%;top:42%">
+    <img src="img/nobg/rotala.png" width="48" height="48" alt="Rotala">
+    <span class="name">Rotala (Pink)</span>
+  </div>
+
+  <div class="sp" style="right:18%;top:58%">
+    <img src="img/nobg/bucephalandra.png" width="46" height="46" alt="Bucephalandra">
+    <span class="name">Bucephalandra</span>
+  </div>
+
+  <div class="sp" style="right:7%;top:80%">
+    <img src="img/nobg/marimo.png" width="44" height="44" alt="Marimo">
+    <span class="name">Marimo Moss Ball</span>
+  </div>
+
+  <div class="sp" style="right:30%;top:76%">
+    <img src="img/nobg/java-moss.png" width="42" height="42" alt="Java Moss">
+    <span class="name">Java Moss</span>
+  </div>
+
+  <!-- ========== WATER ANIMALS ========== -->
+  <div class="sp swim" style="right:14%;top:48%">
+    <img src="img/nobg/opae-ula.png" width="65" height="65" alt="Opae Ula Shrimp">
+    <span class="name">Opae Ula Shrimp</span>
+  </div>
+
+  <div class="sp swim" style="right:4%;top:56%;animation-delay:1.2s">
+    <img src="img/nobg/opae-ula.png" width="40" height="40" alt="Opae Ula">
+  </div>
+
+  <div class="sp swim" style="right:27%;top:52%;animation-delay:0.6s">
+    <img src="img/nobg/opae-ula.png" width="35" height="35" alt="Opae Ula">
+  </div>
+
+  <div class="sp" style="right:24%;top:72%">
+    <img src="img/nobg/assassin-snail.png" width="52" height="52" alt="Assassin Snail">
+    <span class="name">Assassin Snail</span>
+  </div>
+
+  <div class="sp" style="right:5%;top:68%">
+    <img src="img/nobg/ramshorn.png" width="44" height="44" alt="Ramshorn Snail">
+    <span class="name">Ramshorn Snail</span>
+  </div>
+
+  <div class="sp swim" style="right:13%;top:40%;animation-delay:0.3s">
+    <img src="img/nobg/daphnia.png" width="38" height="38" alt="Daphnia">
+    <span class="name">Daphnia</span>
+  </div>
+
+  <div class="sp swim" style="right:29%;top:62%;animation-delay:1.8s">
+    <img src="img/nobg/scuds.png" width="42" height="42" alt="Scuds">
+    <span class="name">Scuds</span>
+  </div>
+
+  <div class="sp" style="right:14%;top:78%">
+    <img src="img/nobg/ostracod.png" width="34" height="34" alt="Ostracods">
+    <span class="name">Ostracods</span>
+  </div>
+
+  <div class="sp" style="right:36%;top:82%">
+    <img src="img/nobg/bladder-snail.png" width="34" height="34" alt="Bladder Snails">
+    <span class="name">Bladder Snails</span>
+  </div>
+</div>
+
+<!-- FULL GALLERY -->
+<div class="gallery">
+  <h2>Full Species Gallery</h2>
+
+  <div class="grid">
+    <!-- === APEX PREDATORS === -->
+    <div class="section-label">Apex Predators</div>
+    <div class="card">
+      <img src="img/nobg/spider.png" alt="Jumping Spider">
+      <div class="info">
+        <h4>Bold Jumping Spider</h4>
+        <p>Phidippus audax — big expressive eyes, iridescent green fangs, hunts by stalking. Lives ~1 year.</p>
+        <span class="tag tag-apex">APEX PREDATOR</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/nobg/pseudoscorpion.png" alt="Pseudoscorpion">
+      <div class="info">
+        <h4>Pseudoscorpion</h4>
+        <p>Tiny scorpion-like predator with pincers. Breeds in terrarium — permanent self-sustaining apex.</p>
+        <span class="tag tag-apex">BACKUP APEX</span>
+      </div>
+    </div>
+
+    <!-- === LAND CREW === -->
+    <div class="section-label">Land Crew</div>
+    <div class="card">
+      <img src="img/nobg/dairy-cow-isopod.png" alt="Dairy Cow Isopods">
+      <div class="info">
+        <h4>Dairy Cow Isopods</h4>
+        <p>Porcellio laevis "Dairy Cow" — black & white spotted like tiny cows. Decomposers that break down leaf litter.</p>
+        <span class="tag tag-land">LAND CREW</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/nobg/springtails.png" alt="Springtails">
+      <div class="info">
+        <h4>Springtails</h4>
+        <p>Essential cleanup crew. Eat mold, dead matter, and waste. The foundation of the land ecosystem.</p>
+        <span class="tag tag-land">LAND CREW</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/nobg/fruit-fly.png" alt="Fruit Flies">
+      <div class="info">
+        <h4>Flightless Fruit Flies</h4>
+        <p>Drosophila melanogaster — breed on decaying matter. Key prey species for the jumping spider.</p>
+        <span class="tag tag-land">PREY</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/nobg/land-snail.png" alt="Land Snail">
+      <div class="info">
+        <h4>Small Land Snails</h4>
+        <p>Graze on algae and decaying plant matter. Charming and self-sustaining.</p>
+        <span class="tag tag-land">LAND CREW</span>
+      </div>
+    </div>
+
+    <!-- === WATER ANIMALS === -->
+    <div class="section-label">Water Animals</div>
+    <div class="card">
+      <img src="img/nobg/opae-ula.png" alt="Opae Ula">
+      <div class="info">
+        <h4>Opae Ula Shrimp</h4>
+        <p>Halocaridina rubra — bright red Hawaiian shrimp. Lives 20+ years in sealed systems. Zero feeding needed.</p>
+        <span class="tag tag-water">WATER STAR</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/nobg/assassin-snail.png" alt="Assassin Snail">
+      <div class="info">
+        <h4>Assassin Snail</h4>
+        <p>Clea helena — yellow & brown striped shell. Hunts other snails, keeps populations balanced.</p>
+        <span class="tag tag-water">WATER PREDATOR</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/nobg/ramshorn.png" alt="Ramshorn Snail">
+      <div class="info">
+        <h4>Ramshorn Snail</h4>
+        <p>Algae-eating snail with spiral shell. Breeds readily — serves as food for assassin snails.</p>
+        <span class="tag tag-water">WATER CREW</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/nobg/daphnia.png" alt="Daphnia">
+      <div class="info">
+        <h4>Daphnia (Water Fleas)</h4>
+        <p>Tiny translucent crustaceans that pulse through water in mesmerizing swarms. Feed on algae.</p>
+        <span class="tag tag-water">WATER CREW</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/nobg/scuds.png" alt="Scuds">
+      <div class="info">
+        <h4>Scuds (Amphipods)</h4>
+        <p>Fast-darting shrimp-like crustaceans. Active detritivores that keep the water section clean.</p>
+        <span class="tag tag-water">WATER CREW</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/nobg/ostracod.png" alt="Ostracods">
+      <div class="info">
+        <h4>Ostracods (Seed Shrimp)</h4>
+        <p>Microscopic crustaceans in tiny shells. Add biodiversity to the water column.</p>
+        <span class="tag tag-water">WATER CREW</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/nobg/bladder-snail.png" alt="Bladder Snails">
+      <div class="info">
+        <h4>Bladder Snails</h4>
+        <p>Small translucent snails that eat detritus. Breed quickly — food source for assassin snails.</p>
+        <span class="tag tag-water">WATER CREW</span>
+      </div>
+    </div>
+
+    <!-- === LAND PLANTS === -->
+    <div class="section-label">Land Plants</div>
+    <div class="card">
+      <img src="img/nobg/jewel-orchid.png" alt="Jewel Orchid">
+      <div class="info">
+        <h4>Jewel Orchid</h4>
+        <p>Macodes petola — velvety dark leaves with glowing gold lightning-bolt veins. The showpiece plant.</p>
+        <span class="tag tag-plant">LAND PLANT</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/nobg/begonia.png" alt="Peacock Begonia">
+      <div class="info">
+        <h4>Peacock Begonia</h4>
+        <p>Begonia pavonina — iridescent blue-green shimmer under low light. Truly stunning.</p>
+        <span class="tag tag-plant">LAND PLANT</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/nobg/fittonia.png" alt="Fittonia">
+      <div class="info">
+        <h4>Fittonia (Nerve Plant)</h4>
+        <p>Pink and white vein varieties. Near-neon colors under grow lights.</p>
+        <span class="tag tag-plant">LAND PLANT</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/nobg/selaginella.png" alt="Ruby Selaginella">
+      <div class="info">
+        <h4>Ruby Red Selaginella</h4>
+        <p>S. erythropus — deep red undersides, much more striking than plain green spikemoss.</p>
+        <span class="tag tag-plant">LAND PLANT</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/nobg/bromeliad.png" alt="Bromeliad">
+      <div class="info">
+        <h4>Mini Bromeliad</h4>
+        <p>Neoregelia — bright reds and pinks. Holds tiny water pools in its center.</p>
+        <span class="tag tag-plant">LAND PLANT</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/nobg/marcgravia.png" alt="Marcgravia">
+      <div class="info">
+        <h4>Marcgravia</h4>
+        <p>Shingling vine with flat leaves that hug surfaces. Creates a dramatic living wall effect.</p>
+        <span class="tag tag-plant">LAND PLANT</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/nobg/mood-moss.png" alt="Mood Moss">
+      <div class="info">
+        <h4>Mood Moss</h4>
+        <p>Dicranum — fluffy mounded moss with lush texture. Creates a miniature forest floor.</p>
+        <span class="tag tag-plant">LAND PLANT</span>
+      </div>
+    </div>
+
+    <!-- === WATER PLANTS === -->
+    <div class="section-label">Water Plants</div>
+    <div class="card">
+      <img src="img/nobg/bucephalandra.png" alt="Bucephalandra">
+      <div class="info">
+        <h4>Bucephalandra</h4>
+        <p>Metallic sheen in reds, blues, greens. Attaches to rocks in the water section.</p>
+        <span class="tag tag-plant">WATER PLANT</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/nobg/rotala.png" alt="Rotala">
+      <div class="info">
+        <h4>Rotala rotundifolia</h4>
+        <p>Turns pink and red under good light. Adds beautiful color to the water section.</p>
+        <span class="tag tag-plant">WATER PLANT</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/nobg/marimo.png" alt="Marimo">
+      <div class="info">
+        <h4>Marimo Moss Balls</h4>
+        <p>Perfectly round, velvety green algae balls. Everyone's favorite.</p>
+        <span class="tag tag-plant">WATER PLANT</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/nobg/java-moss.png" alt="Java Moss">
+      <div class="info">
+        <h4>Java Moss</h4>
+        <p>Taxiphyllum barbieri — feathery aquatic moss. Grows on rocks and driftwood.</p>
+        <span class="tag tag-plant">WATER PLANT</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer-note">
+  All images have backgrounds removed for clean display. Hover species in the terrarium to zoom in.
+</div>
+
+</body>
+</html>
