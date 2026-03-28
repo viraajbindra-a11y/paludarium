@@ -84,10 +84,10 @@
 | Dairy Cow isopods | 25–50 | Decomposers with striking white/black spotted pattern. Break down leaf litter and waste | $15–25 | [Amazon](https://www.amazon.com/s?k=dairy+cow+isopod) · [Amazon](https://www.amazon.com/s?k=dairy+cow+isopods+live) |
 | Small land snails | 5–8 | Grazers, algae/mold control | $5–10 | [Amazon](https://www.amazon.com/s?k=pet+land+snail) |
 | Flightless fruit fly culture (Drosophila melanogaster) | 1 culture | Self-breeding prey for geckos, dart frogs, and spider | $15–22 | [Amazon](https://www.amazon.com/s?k=flightless+fruit+fly+culture) · [Amazon](https://www.amazon.com/s?k=flightless+fruit+fly+culture) |
-| **Ghost mantis (Phyllocrania paradoxa)** | **1** | **Land apex predator.** Looks like a dead leaf come to life. Hunts fruit flies, thrives in humid terrariums | $20–30 | [Amazon](https://www.amazon.com/s?k=ghost+mantis+live) · [Amazon](https://www.amazon.com/s?k=jumping+spider+phidippus+audax) |
-| **Pseudoscorpions** | **5–10** | **Long-term backup apex.** Breed in the terrarium, take over predator role when mantis eventually passes | $15–25 | [Amazon](https://www.amazon.com/s?k=pseudoscorpion+live) · [Amazon](https://www.amazon.com/s?k=pseudoscorpion+live) |
+| **Wolf spider (Tigrosa/Hogna)** | **1** | **Land apex predator.** Active ground hunter — no webs. Females carry babies on their back. Self-sustaining: breeds in terrarium, lives 1–3 years | $15–25 | [Amazon](https://www.amazon.com/s?k=wolf+spider+live) · [Amazon](https://www.amazon.com/s?k=jumping+spider+phidippus+audax) |
+| **Pseudoscorpions** | **5–10** | **Long-term backup apex.** Breed in the terrarium, take over predator role when wolf spider eventually passes | $15–25 | [Amazon](https://www.amazon.com/s?k=pseudoscorpion+live) · [Amazon](https://www.amazon.com/s?k=pseudoscorpion+live) |
 
-> **Why both?** The ghost mantis is the exciting star but only lives 6–12 months and won't breed in a sealed system. The pseudoscorpions are tiny, stay hidden, and breed indefinitely — so when the mantis passes, the predator role carries on without you ever opening the tank. They coexist perfectly.
+> **Why both?** The wolf spider is a self-sustaining apex predator that lives 1–3 years and breeds in the terrarium and breeds on its own — females carry egg sacs and babies ride on mom's back. The pseudoscorpions fill a different size niche, hunting even tinier prey. Both predators coexist and are fully self-sustaining.
 
 ### Decor & Hardscape
 

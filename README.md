@@ -45,8 +45,8 @@ Fine gravel substrate with rocks, planted with bucephalandra, rotala, java moss,
 
 | | Species | Role | Where to Buy |
 |---|---------|------|-------------|
-| <img src="img/nobg/spider.png" width="80"> | **Ghost Mantis** *(Phyllocrania paradoxa)* | Looks like a dead leaf come to life. Active predator — hunts fruit flies. Thrives in humid terrariums. Lives 6–12 months. | [Amazon](https://www.amazon.com/s?k=ghost+mantis+live) |
-| <img src="img/nobg/pseudoscorpion.png" width="80"> | **Pseudoscorpions** ×5–10 | Long-term backup apex predator. Tiny, hidden, breeds indefinitely. Takes over when the mantis passes. | [Amazon](https://www.amazon.com/s?k=pseudoscorpion+live) |
+| <img src="img/nobg/wolf-spider.png" width="80"> | **Wolf Spider** *(Tigrosa/Hogna)* ×1 female | Active ground hunter — no webs. Females carry babies on their back. Self-sustaining: breeds in terrarium, lives 1–3 years. | [Amazon](https://www.amazon.com/s?k=wolf+spider+live) |
+| <img src="img/nobg/pseudoscorpion.png" width="80"> | **Pseudoscorpions** ×5–10 | Secondary predator in a different size niche. Tiny, hidden, breeds indefinitely. | [Amazon](https://www.amazon.com/s?k=pseudoscorpion+live) |
 
 ### Land Crew
 
@@ -55,7 +55,7 @@ Fine gravel substrate with rocks, planted with bucephalandra, rotala, java moss,
 | <img src="img/nobg/springtails.png" width="80"> | **Springtails** ×500+ | Essential decomposers — eat mold, dead plant matter, and waste. The foundation of the cleanup crew. | [Amazon](https://www.amazon.com/s?k=springtail+culture) · [Amazon](https://www.amazon.com/s?k=springtail+culture+live) |
 | <img src="img/nobg/dairy-cow-isopod.png" width="80"> | **Dairy Cow Isopods** ×25–50 | Decomposers with striking white/black spotted pattern. Break down leaf litter and waste. | [Amazon](https://www.amazon.com/s?k=dairy+cow+isopod) · [Amazon](https://www.amazon.com/s?k=dairy+cow+isopods+live) |
 | <img src="img/nobg/land-snail.png" width="80"> | **Small Land Snails** ×5–8 | Grazers — eat algae and decaying matter off glass and surfaces. | [Amazon](https://www.amazon.com/s?k=pet+land+snail) |
-| <img src="img/nobg/fruit-fly.png" width="80"> | **Flightless Fruit Flies** | Self-breeding prey for dart frogs and mantis. | [Amazon](https://www.amazon.com/s?k=flightless+fruit+fly+culture) · [Amazon](https://www.amazon.com/s?k=flightless+fruit+fly+culture) |
+| <img src="img/nobg/fruit-fly.png" width="80"> | **Flightless Fruit Flies** | Self-breeding prey for dart frogs and wolf spider. | [Amazon](https://www.amazon.com/s?k=flightless+fruit+fly+culture) · [Amazon](https://www.amazon.com/s?k=flightless+fruit+fly+culture) |
 
 ### Water Animals
 
