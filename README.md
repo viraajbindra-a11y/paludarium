@@ -2,7 +2,7 @@
 
 A fully sealed, self-sustaining miniature ecosystem combining land and water habitats in a single 15-gallon glass tank. Once built and sealed, the only input is light — everything else (water cycle, nutrient cycling, population control) runs on its own.
 
-**Estimated total cost: ~$700–1,000**
+**Estimated total cost: ~$600–850**
 
 ---
 
@@ -35,19 +35,18 @@ Fine gravel substrate with rocks, planted with bucephalandra, rotala, java moss,
 
 ## Species
 
-### Stars of the Show
+### Star of the Show
 
 | | Species | Role | Where to Buy |
 |---|---------|------|-------------|
-| <img src="img/nobg/mourning-gecko.png" width="80"> | **Mourning Geckos** *(Lepidodactylus lugubris)* ×3 | All-female, self-cloning geckos. Nocturnal, climb glass, eat springtails + fruit flies. Population self-regulates — won't overgrow. | [Amazon](https://www.amazon.com/s?k=mourning+gecko+lepidodactylus+lugubris) · [Amazon](https://www.amazon.com/s?k=mourning+gecko+live) |
-| <img src="img/nobg/dart-frog.png" width="80"> | **Bumblebee Dart Frogs** *(Dendrobates leucomelas)* ×2 | Stunning yellow + black bands. Bold, active daytime hunters. Eat fruit flies. Best beginner dart frog. | [Amazon](https://www.amazon.com/s?k=dendrobates+leucomelas+bumblebee+dart+frog) · [Amazon](https://www.amazon.com/s?k=dart+frog+live) |
+| <img src="img/nobg/dart-frog.png" width="80"> | **Bumblebee Dart Frogs** *(Dendrobates leucomelas)* ×2 | Stunning yellow + black bands. Bold, active daytime hunters. Eat fruit flies. Best beginner dart frog. | [Amazon](https://www.amazon.com/s?k=dendrobates+leucomelas+bumblebee+dart+frog) |
 
 ### Apex Predators
 
 | | Species | Role | Where to Buy |
 |---|---------|------|-------------|
-| <img src="img/nobg/spider.png" width="80"> | **Bold Jumping Spider** *(Phidippus audax)* | Land apex predator — hunts fruit flies and springtails. Active, curious, and full of personality. Lives ~1 year. | [Amazon](https://www.amazon.com/s?k=bold+jumping+spider+live) · [Amazon](https://www.amazon.com/s?k=jumping+spider+phidippus+audax) |
-| <img src="img/nobg/pseudoscorpion.png" width="80"> | **Pseudoscorpions** ×5–10 | Long-term backup apex predator. Tiny, hidden, breeds indefinitely. Takes over when the spider passes. | [Amazon](https://www.amazon.com/s?k=pseudoscorpion+live) · [Amazon](https://www.amazon.com/s?k=pseudoscorpion+live) |
+| <img src="img/nobg/spider.png" width="80"> | **Ghost Mantis** *(Phyllocrania paradoxa)* | Looks like a dead leaf come to life. Active predator — hunts fruit flies. Thrives in humid terrariums. Lives 6–12 months. | [Amazon](https://www.amazon.com/s?k=ghost+mantis+live) |
+| <img src="img/nobg/pseudoscorpion.png" width="80"> | **Pseudoscorpions** ×5–10 | Long-term backup apex predator. Tiny, hidden, breeds indefinitely. Takes over when the mantis passes. | [Amazon](https://www.amazon.com/s?k=pseudoscorpion+live) |
 
 ### Land Crew
 
@@ -56,7 +55,7 @@ Fine gravel substrate with rocks, planted with bucephalandra, rotala, java moss,
 | <img src="img/nobg/springtails.png" width="80"> | **Springtails** ×500+ | Essential decomposers — eat mold, dead plant matter, and waste. The foundation of the cleanup crew. | [Amazon](https://www.amazon.com/s?k=springtail+culture) · [Amazon](https://www.amazon.com/s?k=springtail+culture+live) |
 | <img src="img/nobg/dairy-cow-isopod.png" width="80"> | **Dairy Cow Isopods** ×25–50 | Decomposers with striking white/black spotted pattern. Break down leaf litter and waste. | [Amazon](https://www.amazon.com/s?k=dairy+cow+isopod) · [Amazon](https://www.amazon.com/s?k=dairy+cow+isopods+live) |
 | <img src="img/nobg/land-snail.png" width="80"> | **Small Land Snails** ×5–8 | Grazers — eat algae and decaying matter off glass and surfaces. | [Amazon](https://www.amazon.com/s?k=pet+land+snail) |
-| <img src="img/nobg/fruit-fly.png" width="80"> | **Flightless Fruit Flies** | Self-breeding prey for geckos, dart frogs, and spider. | [Amazon](https://www.amazon.com/s?k=flightless+fruit+fly+culture) · [Amazon](https://www.amazon.com/s?k=flightless+fruit+fly+culture) |
+| <img src="img/nobg/fruit-fly.png" width="80"> | **Flightless Fruit Flies** | Self-breeding prey for dart frogs and mantis. | [Amazon](https://www.amazon.com/s?k=flightless+fruit+fly+culture) · [Amazon](https://www.amazon.com/s?k=flightless+fruit+fly+culture) |
 
 ### Water Animals
 

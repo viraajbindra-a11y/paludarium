@@ -72,10 +72,9 @@
 
 | Animal | Quantity | Role | Approx. Price | Buy |
 |--------|----------|------|---------------|-----|
-| **Mourning geckos** (Lepidodactylus lugubris) | **3** | **All-female, self-cloning geckos.** Nocturnal, climb glass, eat springtails + fruit flies. Breed via parthenogenesis — population self-regulates and won't overgrow | $25–40 each | [Amazon](https://www.amazon.com/s?k=mourning+gecko+lepidodactylus+lugubris) · [Amazon](https://www.amazon.com/s?k=mourning+gecko+live) |
 | **Bumblebee dart frogs** (Dendrobates leucomelas) | **2** | **Stunning yellow + black banded frogs.** Bold, active during the day, eat fruit flies. Best beginner dart frog. Coexist perfectly with mourning geckos (different schedules — frogs are diurnal, geckos are nocturnal) | $50–60 each | [Amazon](https://www.amazon.com/s?k=dendrobates+leucomelas+bumblebee+dart+frog) · [Amazon](https://www.amazon.com/s?k=dart+frog+live) |
 
-> **Why this combo works:** Mourning geckos are active at night while bumblebee dart frogs own the daytime — so you get 24/7 visible animal activity. Both eat the fruit flies and springtails already in the build. The geckos climb the upper glass while the frogs patrol the forest floor. Neither species is aggressive toward the other.
+> **Why this combo works:** Bumblebee dart frogs are bold, active during the day — and their bright yellow/black bands make them the visual centerpiece. They eat the fruit flies and springtails already in the build and patrol the forest floor.
 
 ### Animals — Land Section
 
@@ -85,10 +84,10 @@
 | Dairy Cow isopods | 25–50 | Decomposers with striking white/black spotted pattern. Break down leaf litter and waste | $15–25 | [Amazon](https://www.amazon.com/s?k=dairy+cow+isopod) · [Amazon](https://www.amazon.com/s?k=dairy+cow+isopods+live) |
 | Small land snails | 5–8 | Grazers, algae/mold control | $5–10 | [Amazon](https://www.amazon.com/s?k=pet+land+snail) |
 | Flightless fruit fly culture (Drosophila melanogaster) | 1 culture | Self-breeding prey for geckos, dart frogs, and spider | $15–22 | [Amazon](https://www.amazon.com/s?k=flightless+fruit+fly+culture) · [Amazon](https://www.amazon.com/s?k=flightless+fruit+fly+culture) |
-| **Bold jumping spider (Phidippus audax)** | **1** | **Land apex predator.** Active hunter, expressive eyes, tons of personality | $10–20 | [Amazon](https://www.amazon.com/s?k=bold+jumping+spider+live) · [Amazon](https://www.amazon.com/s?k=jumping+spider+phidippus+audax) |
-| **Pseudoscorpions** | **5–10** | **Long-term backup apex.** Breed in the terrarium, take over predator role when spider eventually dies | $15–25 | [Amazon](https://www.amazon.com/s?k=pseudoscorpion+live) · [Amazon](https://www.amazon.com/s?k=pseudoscorpion+live) |
+| **Ghost mantis (Phyllocrania paradoxa)** | **1** | **Land apex predator.** Looks like a dead leaf come to life. Hunts fruit flies, thrives in humid terrariums | $20–30 | [Amazon](https://www.amazon.com/s?k=ghost+mantis+live) · [Amazon](https://www.amazon.com/s?k=jumping+spider+phidippus+audax) |
+| **Pseudoscorpions** | **5–10** | **Long-term backup apex.** Breed in the terrarium, take over predator role when mantis eventually passes | $15–25 | [Amazon](https://www.amazon.com/s?k=pseudoscorpion+live) · [Amazon](https://www.amazon.com/s?k=pseudoscorpion+live) |
 
-> **Why both?** The jumping spider is the exciting star but only lives ~1 year and won't breed in a sealed system. The pseudoscorpions are tiny, stay hidden, and breed indefinitely — so when the spider passes, the predator role carries on without you ever opening the tank. The spider won't hunt pseudoscorpions (they're too small and hide in leaf litter). They coexist perfectly.
+> **Why both?** The ghost mantis is the exciting star but only lives 6–12 months and won't breed in a sealed system. The pseudoscorpions are tiny, stay hidden, and breed indefinitely — so when the mantis passes, the predator role carries on without you ever opening the tank. They coexist perfectly.
 
 ### Decor & Hardscape
 
