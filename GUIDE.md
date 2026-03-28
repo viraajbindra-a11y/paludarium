@@ -63,7 +63,7 @@
 | Opae ula shrimp (Hawaiian red shrimp) | 30+ | Bright red, live 20+ years, zero feeding. The water section stars | $30–50 | [Amazon](https://www.amazon.com/s?k=opae+ula+shrimp) · [Etsy](https://www.etsy.com/search?q=opae+ula+shrimp) |
 | Assassin snails (Clea helena) | 3–5 | Yellow/brown striped shells. Water apex predator — hunts other snails | $8–12 | [Amazon](https://www.amazon.com/s?k=assassin+snail) · [AquaticArts](https://aquaticarts.com/collections/snails) |
 | Ramshorn snails | 8–10 | Algae control, waste processing, prey for assassin snails | $5–8 | [Amazon](https://www.amazon.com/s?k=ramshorn+snail) |
-| Bladder snails | 8–10 | Algae/detritus cleanup, prey for assassin snails | $3–5 (often free) | Often included free with plant orders |
+| Bladder snails | 8–10 | Algae/detritus cleanup, prey for assassin snails | $3–5 (often free) | [Amazon](https://www.amazon.com/One-Stop-Aquatics-Freshwater-Bladder/dp/B00XS7TZXK) · Often free with plant orders |
 | Daphnia starter culture | 1 culture | Pulsing zooplankton swarms, mesmerizing to watch | $8–12 | [Amazon](https://www.amazon.com/s?k=daphnia+culture) |
 | Scuds (amphipods) starter culture | 1 culture | Fast-darting detritivores, very active | $8–12 | [Amazon](https://www.amazon.com/s?k=scud+amphipod+culture) |
 | Ostracod (seed shrimp) culture | 1 culture | Microfauna biodiversity layer | $8–12 | [Amazon](https://www.amazon.com/s?k=ostracod+culture) · [Etsy](https://www.etsy.com/search?q=ostracod+culture) |
