@@ -10,7 +10,7 @@
 
 | Item | Details | Approx. Price | Buy |
 |------|---------|---------------|-----|
-| 15-gallon glass tank with tight-fitting glass lid | Fully sealable. Rimless aquarium + custom-cut glass lid works best | $40–80 | [Amazon](https://www.amazon.com/s?k=15+gallon+rimless+aquarium) |
+| 15-gallon glass tank with tight-fitting glass lid | Fully sealable. Rimless aquarium + custom-cut glass lid works best | $110 | [Amazon](https://www.amazon.com/s?k=15+gallon+rimless+aquarium) |
 | Aquarium-safe silicone sealant | 100% silicone, no mold inhibitors. For sealing the lid and building the divider | $8–12 | [Amazon](https://www.amazon.com/s?k=aquarium+safe+silicone+sealant) |
 | Plexiglass divider | Separates land and water zones (~6" tall, cut to tank width) | $5–10 | [Amazon](https://www.amazon.com/s?k=plexiglass+sheet+aquarium) |
 | LED grow light + outlet timer | Low-wattage full-spectrum, set to 10–12 hour cycle. The only external input this ecosystem needs | $20–35 | [Amazon](https://www.amazon.com/s?k=led+grow+light+terrarium+timer) |

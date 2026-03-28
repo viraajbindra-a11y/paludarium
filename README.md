@@ -2,7 +2,7 @@
 
 A fully sealed, self-sustaining miniature ecosystem combining land and water habitats in a single 15-gallon glass tank. Once built and sealed, the only input is light — everything else (water cycle, nutrient cycling, population control) runs on its own.
 
-**Estimated total cost: $525–750**
+**Estimated total cost: $555–780**
 
 ---
 
@@ -97,7 +97,7 @@ Fine gravel substrate with rocks, planted with bucephalandra, rotala, java moss,
 
 | Item | Price | Link |
 |------|-------|------|
-| 15-gal rimless glass tank + lid | $40–80 | [Amazon](https://www.amazon.com/s?k=15+gallon+rimless+aquarium) |
+| 15-gal rimless glass tank + lid | $110 | [Amazon](https://www.amazon.com/s?k=15+gallon+rimless+aquarium) |
 | Aquarium-safe silicone sealant | $8–12 | [Amazon](https://www.amazon.com/s?k=aquarium+safe+silicone+sealant) |
 | Plexiglass divider sheet | $5–10 | [Amazon](https://www.amazon.com/s?k=plexiglass+sheet+aquarium) |
 | LED grow light + timer | $20–35 | [Amazon](https://www.amazon.com/s?k=led+grow+light+terrarium+timer) |
