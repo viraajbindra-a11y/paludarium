@@ -2,7 +2,7 @@
 
 A fully sealed, self-sustaining miniature ecosystem combining land and water habitats in a single 15-gallon glass tank. Once built and sealed, the only input is light — everything else (water cycle, nutrient cycling, population control) runs on its own.
 
-**Estimated total cost: ~$500**
+**Estimated total cost: ~$700–1,000**
 
 ---
 

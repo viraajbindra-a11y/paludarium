@@ -61,11 +61,11 @@
 | Animal | Quantity | Role | Approx. Price | Buy |
 |--------|----------|------|---------------|-----|
 | Opae ula shrimp (Hawaiian red shrimp) | 30+ | Bright red, live 20+ years, zero feeding. The water section stars | $30–50 | [Amazon](https://www.amazon.com/s?k=opae+ula+shrimp) · [Amazon](https://www.amazon.com/s?k=opae+ula+shrimp+live) |
-| Assassin snails (Clea helena) | 3–5 | Yellow/brown striped shells. Water apex predator — hunts other snails | $8–12 | [Amazon](https://www.amazon.com/s?k=assassin+snail) · [Amazon](https://www.amazon.com/s?k=aquarium+snails+live) |
-| Ramshorn snails | 8–10 | Algae control, waste processing, prey for assassin snails | $5–8 | [Amazon](https://www.amazon.com/s?k=ramshorn+snail) |
-| Bladder snails | 8–10 | Algae/detritus cleanup, prey for assassin snails | $3–5 (often free) | [Amazon](https://www.amazon.com/One-Stop-Aquatics-Freshwater-Bladder/dp/B00XS7TZXK) · Often free with plant orders |
-| Daphnia starter culture | 1 culture | Pulsing zooplankton swarms, mesmerizing to watch | $8–12 | [Amazon](https://www.amazon.com/s?k=daphnia+culture) |
-| Scuds (amphipods) starter culture | 1 culture | Fast-darting detritivores, very active | $8–12 | [Amazon](https://www.amazon.com/s?k=scud+amphipod+culture) |
+| Assassin snails (Clea helena) | 3–5 | Yellow/brown striped shells. Water apex predator — hunts other snails | $24–39 | [Amazon](https://www.amazon.com/s?k=assassin+snail) · [Amazon](https://www.amazon.com/s?k=aquarium+snails+live) |
+| Ramshorn snails | 8–10 | Algae control, waste processing, prey for assassin snails | $15–20 | [Amazon](https://www.amazon.com/s?k=ramshorn+snail) |
+| Bladder snails | 8–10 | Algae/detritus cleanup, prey for assassin snails | $19–24 | [Amazon](https://www.amazon.com/One-Stop-Aquatics-Freshwater-Bladder/dp/B00XS7TZXK) · Often free with plant orders |
+| Daphnia starter culture | 1 culture | Pulsing zooplankton swarms, mesmerizing to watch | $14–18 | [Amazon](https://www.amazon.com/s?k=daphnia+culture) |
+| Scuds (amphipods) starter culture | 1 culture | Fast-darting detritivores, very active | $12–15 | [Amazon](https://www.amazon.com/s?k=scud+amphipod+culture) |
 | Ostracod (seed shrimp) culture | 1 culture | Microfauna biodiversity layer | $8–12 | [Amazon](https://www.amazon.com/s?k=ostracod+culture) · [Amazon](https://www.amazon.com/s?k=ostracod+seed+shrimp+culture) |
 
 ### Stars of the Show
@@ -81,10 +81,10 @@
 
 | Animal | Quantity | Role | Approx. Price | Buy |
 |--------|----------|------|---------------|-----|
-| Springtail starter culture (large) | 1 culture (500+) | Essential decomposers, cleanup crew, prey species | $10–15 | [Amazon](https://www.amazon.com/s?k=springtail+culture) · [Amazon](https://www.amazon.com/s?k=springtail+culture+live) |
-| Dairy Cow isopods | 25–50 | Decomposers with striking white/black spotted pattern. Break down leaf litter and waste | $12–20 | [Amazon](https://www.amazon.com/s?k=dairy+cow+isopod) · [Amazon](https://www.amazon.com/s?k=dairy+cow+isopods+live) |
+| Springtail starter culture (large) | 1 culture (500+) | Essential decomposers, cleanup crew, prey species | $13–20 | [Amazon](https://www.amazon.com/s?k=springtail+culture) · [Amazon](https://www.amazon.com/s?k=springtail+culture+live) |
+| Dairy Cow isopods | 25–50 | Decomposers with striking white/black spotted pattern. Break down leaf litter and waste | $15–25 | [Amazon](https://www.amazon.com/s?k=dairy+cow+isopod) · [Amazon](https://www.amazon.com/s?k=dairy+cow+isopods+live) |
 | Small land snails | 5–8 | Grazers, algae/mold control | $5–10 | [Amazon](https://www.amazon.com/s?k=pet+land+snail) |
-| Flightless fruit fly culture (Drosophila melanogaster) | 1 culture | Self-breeding prey for geckos, dart frogs, and spider | $8–12 | [Amazon](https://www.amazon.com/s?k=flightless+fruit+fly+culture) · [Amazon](https://www.amazon.com/s?k=flightless+fruit+fly+culture) |
+| Flightless fruit fly culture (Drosophila melanogaster) | 1 culture | Self-breeding prey for geckos, dart frogs, and spider | $15–22 | [Amazon](https://www.amazon.com/s?k=flightless+fruit+fly+culture) · [Amazon](https://www.amazon.com/s?k=flightless+fruit+fly+culture) |
 | **Bold jumping spider (Phidippus audax)** | **1** | **Land apex predator.** Active hunter, expressive eyes, tons of personality | $10–20 | [Amazon](https://www.amazon.com/s?k=bold+jumping+spider+live) · [Amazon](https://www.amazon.com/s?k=jumping+spider+phidippus+audax) |
 | **Pseudoscorpions** | **5–10** | **Long-term backup apex.** Breed in the terrarium, take over predator role when spider eventually dies | $15–25 | [Amazon](https://www.amazon.com/s?k=pseudoscorpion+live) · [Amazon](https://www.amazon.com/s?k=pseudoscorpion+live) |
 
