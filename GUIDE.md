@@ -68,6 +68,15 @@
 | Scuds (amphipods) starter culture | 1 culture | Fast-darting detritivores, very active | $8–12 | [Amazon](https://www.amazon.com/s?k=scud+amphipod+culture) |
 | Ostracod (seed shrimp) culture | 1 culture | Microfauna biodiversity layer | $8–12 | [Amazon](https://www.amazon.com/s?k=ostracod+culture) · [Etsy](https://www.etsy.com/search?q=ostracod+culture) |
 
+### Stars of the Show
+
+| Animal | Quantity | Role | Approx. Price | Buy |
+|--------|----------|------|---------------|-----|
+| **Mourning geckos** (Lepidodactylus lugubris) | **3** | **All-female, self-cloning geckos.** Nocturnal, climb glass, eat springtails + fruit flies. Breed via parthenogenesis — population self-regulates and won't overgrow | $25–40 each | [JoshsFrogs](https://www.joshsfrogs.com/mourning-gecko-adult-lepidodactylus-lugubris-captive-bred.html) · [FrogDaddy](https://frogdaddy.net/products/lepidodactylus-lugubris-mourning-gecko) |
+| **Bumblebee dart frogs** (Dendrobates leucomelas) | **2** | **Stunning yellow + black banded frogs.** Bold, active during the day, eat fruit flies. Best beginner dart frog. Coexist perfectly with mourning geckos (different schedules — frogs are diurnal, geckos are nocturnal) | $50–60 each | [JoshsFrogs](https://www.joshsfrogs.com/dendrobates-leucomelas-bumble-bee-dart-frog.html) · [FrogDaddy](https://frogdaddy.net) |
+
+> **Why this combo works:** Mourning geckos are active at night while bumblebee dart frogs own the daytime — so you get 24/7 visible animal activity. Both eat the fruit flies and springtails already in the build. The geckos climb the upper glass while the frogs patrol the forest floor. Neither species is aggressive toward the other.
+
 ### Animals — Land Section
 
 | Animal | Quantity | Role | Approx. Price | Buy |
@@ -75,7 +84,7 @@
 | Springtail starter culture (large) | 1 culture (500+) | Essential decomposers, cleanup crew, prey species | $10–15 | [Amazon](https://www.amazon.com/s?k=springtail+culture) · [GlassBoxTropicals](https://www.glassboxtropicals.com/springtails-s/1835.htm) |
 | Dairy Cow isopods | 25–50 | Decomposers with striking white/black spotted pattern. Break down leaf litter and waste | $12–20 | [Amazon](https://www.amazon.com/s?k=dairy+cow+isopod) · [GlassBoxTropicals](https://www.glassboxtropicals.com/dairy-cow-isopods-p/gbt-isodc.htm) |
 | Small land snails | 5–8 | Grazers, algae/mold control | $5–10 | [Amazon](https://www.amazon.com/s?k=pet+land+snail) |
-| Flightless fruit fly culture (Drosophila melanogaster) | 1 culture | Self-breeding prey population for the spider | $8–12 | [Amazon](https://www.amazon.com/s?k=flightless+fruit+fly+culture) · [JoshsFrogs](https://www.joshsfrogs.com/fruit-flies.html) |
+| Flightless fruit fly culture (Drosophila melanogaster) | 1 culture | Self-breeding prey for geckos, dart frogs, and spider | $8–12 | [Amazon](https://www.amazon.com/s?k=flightless+fruit+fly+culture) · [JoshsFrogs](https://www.joshsfrogs.com/fruit-flies.html) |
 | **Bold jumping spider (Phidippus audax)** | **1** | **Land apex predator.** Active hunter, expressive eyes, tons of personality | $10–20 | [Phidippus.com](https://phidippus.com) · [PangeaReptile](https://www.pangeareptile.com/store/jumping-spiders.html) |
 | **Pseudoscorpions** | **5–10** | **Long-term backup apex.** Breed in the terrarium, take over predator role when spider eventually dies | $15–25 | [PangeaReptile](https://www.pangeareptile.com/store/pseudoscorpion.html) · [GlassBoxTropicals](https://www.glassboxtropicals.com/pseudoscorpion-p/gbt-pseudoscorpion.htm) |
 

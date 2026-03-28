@@ -2,7 +2,7 @@
 
 A fully sealed, self-sustaining miniature ecosystem combining land and water habitats in a single 15-gallon glass tank. Once built and sealed, the only input is light — everything else (water cycle, nutrient cycling, population control) runs on its own.
 
-**Estimated total cost: $350–550**
+**Estimated total cost: $525–750**
 
 ---
 
@@ -35,6 +35,13 @@ Fine gravel substrate with rocks, planted with bucephalandra, rotala, java moss,
 
 ## Species
 
+### Stars of the Show
+
+| | Species | Role | Where to Buy |
+|---|---------|------|-------------|
+| <img src="img/nobg/mourning-gecko.png" width="80"> | **Mourning Geckos** *(Lepidodactylus lugubris)* ×3 | All-female, self-cloning geckos. Nocturnal, climb glass, eat springtails + fruit flies. Population self-regulates — won't overgrow. | [JoshsFrogs](https://www.joshsfrogs.com/mourning-gecko-adult-lepidodactylus-lugubris-captive-bred.html) · [FrogDaddy](https://frogdaddy.net/products/lepidodactylus-lugubris-mourning-gecko) |
+| <img src="img/nobg/dart-frog.png" width="80"> | **Bumblebee Dart Frogs** *(Dendrobates leucomelas)* ×2 | Stunning yellow + black bands. Bold, active daytime hunters. Eat fruit flies. Best beginner dart frog. | [JoshsFrogs](https://www.joshsfrogs.com/dendrobates-leucomelas-bumble-bee-dart-frog.html) · [FrogDaddy](https://frogdaddy.net) |
+
 ### Apex Predators
 
 | | Species | Role | Where to Buy |
@@ -49,7 +56,7 @@ Fine gravel substrate with rocks, planted with bucephalandra, rotala, java moss,
 | <img src="img/nobg/springtails.png" width="80"> | **Springtails** ×500+ | Essential decomposers — eat mold, dead plant matter, and waste. The foundation of the cleanup crew. | [Amazon](https://www.amazon.com/s?k=springtail+culture) · [GlassBoxTropicals](https://www.glassboxtropicals.com/springtails-s/1835.htm) |
 | <img src="img/nobg/dairy-cow-isopod.png" width="80"> | **Dairy Cow Isopods** ×25–50 | Decomposers with striking white/black spotted pattern. Break down leaf litter and waste. | [Amazon](https://www.amazon.com/s?k=dairy+cow+isopod) · [GlassBoxTropicals](https://www.glassboxtropicals.com/dairy-cow-isopods-p/gbt-isodc.htm) |
 | <img src="img/nobg/land-snail.png" width="80"> | **Small Land Snails** ×5–8 | Grazers — eat algae and decaying matter off glass and surfaces. | [Amazon](https://www.amazon.com/s?k=pet+land+snail) |
-| <img src="img/nobg/fruit-fly.png" width="80"> | **Flightless Fruit Flies** | Self-breeding prey colony for the jumping spider. | [Amazon](https://www.amazon.com/s?k=flightless+fruit+fly+culture) · [JoshsFrogs](https://www.joshsfrogs.com/fruit-flies.html) |
+| <img src="img/nobg/fruit-fly.png" width="80"> | **Flightless Fruit Flies** | Self-breeding prey for geckos, dart frogs, and spider. | [Amazon](https://www.amazon.com/s?k=flightless+fruit+fly+culture) · [JoshsFrogs](https://www.joshsfrogs.com/fruit-flies.html) |
 
 ### Water Animals
 
